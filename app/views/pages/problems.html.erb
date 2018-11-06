@@ -1,0 +1,84 @@
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Tu diario</h2>
+            <span class="section-separator"></span>
+        </div>
+        <!--process-wrap  -->
+        <div class="process-wrap fl-wrap">
+            <ul>
+                <li>
+                    <%= link_to "/tones" do %>
+                        <div class="process-item">
+                            <span class="process-count">01 . </span>
+                            <div class="time-line-icon"><i class="fa fa-microphone"></i></div>
+                            <h4>Grabaciones de voz</h4>
+                            <p style="color: black;">Aquí puedes ver tus grabaciones recolectadas durante los días</p>
+                        </div>
+                        <span class="pr-dec"></span>
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to "/recognitions" do %>
+                        <div class="process-item">
+                            <span class="process-count">02 .</span>
+                            <div class="time-line-icon"><i class="fa fa-camera"></i></div>
+                            <h4>Imagenes</h4>
+                            <p style="color: black;">Imagenes tomadas a la hora del maltrato</p>
+                        </div>
+                        <span class="pr-dec"></span>
+                    <% end %>
+                </li>
+                <li>
+                    <%= link_to "/texts" do %>
+                        <div class="process-item">
+                            <span class="process-count">03 .</span>
+                            <div class="time-line-icon"><i class="fa fa-font"></i></div>
+                            <h4>Textos</h4>
+                            <p style="color: black;">Textos y escritos que reflejan tu personalidad</p>
+                        </div>
+                    <% end %>
+                </li>
+            </ul>
+            <div class="section-title">
+                <h2>Tus estadísticas</h2>
+                <span class="section-separator"></span>
+            </div>
+            <iframe style="width: 100%; height: 80vh;" src="https://datastudio.google.com/embed/reporting/1SeMQ9gC0ROYmQXuFOTMY-kwbR4oH88cY/page/1qdb" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--process-wrap   end-->
+    </div>
+</section>
+<script type="text/javascript">
+    function clickButtom(){
+        sweetAlert("Hello world!");
+    }
+</script>
+<script type="text/javascript">
+    <% if @notifications.size > 0 %>
+        var message = "";
+        switch(getRandomInt(1,3)){
+            case 1:
+                message = "Habla con tu pareja, lleguen a acuerdos";
+                break;
+            case 2:
+                message = "¡¡Es momento de actuar!!"
+                break;
+            case 3:
+                message = "Es urgente que tomes medidas al respecto"
+                break;
+        }
+        swal({
+            position: 'top-end',
+            type: 'success',
+            title: 'Atención',
+            text: 'Se ha detectado que eres victima de violencia de género. ' + message,
+            showConfirmButton: true,
+            showCancelButton: true
+        })
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    <% end %>
+</script>

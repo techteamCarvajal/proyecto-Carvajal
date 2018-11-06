@@ -1,0 +1,78 @@
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+ 
+   <section class="parallax-section" data-scrollax-parent="true">
+                        <div class="bg par-elem "  data-bg="<%= image_path('blog.jpg') %>" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="section-title center-align">
+                                <h2><span>Construye tu mejor versión</span></h2>
+                                <div class="breadcrumbs fl-wrap"><a href="#">Blog</a></div>
+                                <span class="section-separator"></span>
+                            </div>
+                        </div>
+                       
+                    </section>
+
+
+                           <div class="dashboard-list-box fl-wrap">
+                    <div class="reviews-comments-wrap">
+                        <% if @blogs.size == 0 %>
+                            <p>No existen actualmente contenidos en el blog, crea una</p>
+                        <% end %>
+                         <% @blogs.each do |blog| %>
+                            <!-- reviews-comments-item -->  
+                            <div class="reviews-comments-item">
+                                <div class="reviews-comments-item-text">
+                                
+                                  <div class="post-author"><%= image_tag("1.jpg") %> <span>Autor:  <%= blog.user.nombres %>  <%= blog.user.apellidos%></span></a></div>
+                                    <div class="clearfix"></div>
+                                    <p>Titulo del contenido: <%= blog.nombre %></p>
+                                    <p>Descripción: <%= blog.contenido  %></p>
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= blog.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                </div>
+                            </div>
+                            <!--reviews-comments-item end-->
+                        <% end %>
+                    </div>
+                </div>
+
+                <div class="process-wrap fl-wrap">
+            <ul>
+                <li>
+                    <%= link_to "/blogs/new" do %>
+                       
+                        <span class="pr-dec"></span>
+                    <% end %>
+                </li>
+
+                 <li>
+                    <%= link_to "/blogs/new" do %>
+                        <div class="process-item">
+                            <div class="time-line-icon"><i class="fa fa-plus-square"></i></div>
+                            <h4>Crear contenido</h4>
+                            <p style="color: black;">Aquí puedes crear publicaciones para que sean leidas por la comunidad</p>
+                        </div>
+                        <span class="pr-dec"></span>
+                    <% end %>
+                </li>
+
+                 <li>
+                    <%= link_to "/blogs/new" do %>
+                      
+                        <span class="pr-dec"></span>
+                    <% end %>
+                </li>
+              </ul>
+            </div>
+  
+
+                   
+                                                
+
+                                    
+

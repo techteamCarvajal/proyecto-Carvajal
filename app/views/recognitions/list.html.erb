@@ -1,0 +1,88 @@
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<style type="text/css">
+#container-video {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#v {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+    position: relative;
+}
+.content{
+	position: absolute;
+}
+canvas{
+	position: relative;
+}
+</style>
+<div class="container-video">
+	<video id="v" autoplay="true"></video>
+	<input id="b" type="button" disabled="true" value="Take Picture" class="btn  big-btn  color-bg flat-btn" style="text-decoration: none; position: relative; border-width: inherit; border-style: inherit; border-color: inherit; border-image: inherit; font: inherit; cursor: pointer; padding: 10px; margin: 0 auto; margin-bottom: 20px; margin-top: 20px;"></input>
+	
+</div>
+<canvas id="c" width="500px" height="375px"></canvas>
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Tu registro de imágenes</h2>
+            <span class="section-separator"></span>
+        </div>
+    	<div class="row">
+    		<div class="col-md-12">
+                <div class="dashboard-list-box fl-wrap">
+                    <div class="reviews-comments-wrap">
+                        <% if @recognitions.size == 0 %>
+                            <p>No tienes registros de imagenes actualmente, crea una</p>
+                        <% end %>
+                        <% @recognitions.each do |recognition|%>
+                            <!-- reviews-comments-item -->  
+                            <div class="reviews-comments-item">
+                            	<div class="review-comments-avatar">
+                                    <img style="width: 180px; height: auto;" id="<%=recognition.id%>" > 
+                                </div>
+                                <script type="text/javascript">
+                                	document.getElementById("<%=recognition.id%>").setAttribute('src', "<%=recognition.image%>");
+                                </script>
+                                <div class="reviews-comments-item-text">
+                                    <h4>Captura de cámara realizada el <%= recognition.created_at.strftime("%B, %d") %></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Análisis: <%= recognition.analisis %></p>
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= recognition.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                </div>
+                            </div>
+                            <!--reviews-comments-item end-->
+                        <% end %>
+                    </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+</section>
+<script>
+	navigator.getUserMedia({video: true}, function(stream) {
+		var video = document.getElementById("v");
+		var canvas = document.getElementById("c");
+		var button = document.getElementById("b");
+		video.srcObject = stream; 
+		button.disabled = false
+		button.onclick = function() {
+			canvas.getContext("2d").drawImage(video, 0, 0, 1000, 800, 0, 0, 500, 375);
+			var img = canvas.toDataURL("image/png");
+			$.ajax({
+	            method: "POST",
+	            url: "/save_rec",
+	            data: { image: img },
+				success: function () {
+					location.reload();
+				},
+				error: function () {
+					location.reload();
+				}
+			});
+		};
+	}, function(err) { alert("there was an error " + err)});
+</script>

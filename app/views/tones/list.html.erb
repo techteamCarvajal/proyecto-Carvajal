@@ -1,0 +1,97 @@
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Tu registro de grabaciones</h2>
+            <span class="section-separator"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container microphone-mic">
+                    <div class="text-box" contenteditable="true"></div>
+                    <i><button class="btn  big-btn  color-bg flat-btn" style="text-decoration: none; position: relative; border-width: inherit; border-style: inherit; border-color: inherit; border-image: inherit; font: inherit; cursor: pointer; padding: 10px; margin-bottom: 20px; margin-top: 20px; float: right;">Comenzar grabación</button></i>
+                </div>
+                <br><br>
+                <div class="result"></div>
+                <div class="dashboard-list-box fl-wrap">
+                    <div class="reviews-comments-wrap">
+                        <% if @recordings.size == 0 %>
+                            <p>No tienes grabaciones actualmente, crea una</p>
+                        <% end %>
+                        <% @recordings.each do |recording|%>
+                            <!-- reviews-comments-item -->  
+                            <div class="reviews-comments-item">
+                                <div class="reviews-comments-item-text">
+                                    <h4>Grabación realizada el <%= recording.created_at.strftime("%B, %d") %></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Texto detectado: <%= recording.texto %></p>
+                                    <p>Emoción: <%= recording.emocion %></p>
+                                    <p>Detectada como <%= (recording.status == 1) ? "conducta normal" : "conducta agresiva"%></p>
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= recording.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                </div>
+                            </div>
+                            <!--reviews-comments-item end-->
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+
+    const recognition = new SpeechRecognition();
+    const icon = document.querySelector('i > .btn')
+    let paragraph = document.createElement('p');
+    let container = document.querySelector('.text-box');
+    container.appendChild(paragraph);
+
+    icon.addEventListener('click', () => {
+        dictate();
+    });
+
+    const dictate = () => {
+        recognition.start();
+            recognition.onresult = (event) => {
+            const speechToText = event.results[0][0].transcript;
+            if(speechToText) {
+                paragraph.textContent = speechToText;
+                sendResult(speechToText);
+            } else {
+                paragraph.textContent = "No se detectó tu voz, inténtalo de nuevo";
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+    function sendResult(text) {
+        let paragraph_result = document.createElement('p');
+        let div_result = document.querySelector('.result');
+
+        $.ajax({
+            method: "POST",
+            url: "/translate_text",
+            data: { text: text },
+        })
+        .done(function() {
+            location.reload();
+        });       
+    }
+</script>
+<script type="text/javascript">
+    <% if @notifications.size > 0%>
+        <% if @recordings.size > 0 %>
+            <% if @recordings.first.status == 0 %>
+                swal({
+                    position: 'top-end',
+                    type: 'success',
+                    title: 'Atención',
+                    text: 'Se ha detectado lenguaje ofensivo en contra tuya en tu última graduación',
+                    showConfirmButton: true,
+                    showCancelButton: true
+                })
+            <% end %>
+        <% end %>
+    <% end %>
+</script>

@@ -1,0 +1,44 @@
+@import "toastr";
+@import "color";
+@import "plugins";
+@import "reset";
+@import "style";
+@import "font-awesome";
+
+.container.microphone-mic {
+  position: relative;
+  border: 1px solid #f2efe2;
+  width: 40vw;
+  max-width: 60vw;
+  margin: 0 auto;
+  border-radius: 0.1rem;
+  background: #f2efe2;
+  padding: 0.2rem 1rem;
+  color: #1e2440;
+  overflow: hidden;
+  margin-top: 10vh;
+}
+.text-box {
+  max-height: 70vh;
+  overflow: hidden;
+}
+.text-box:focus {
+  outline: none;
+}
+.text-box p {
+  border-bottom: 1px dotted black;
+  margin: 0px !important;
+}
+@media (max-width: 768px) {
+  .container.microphone-mic {
+    width: 85vw;
+    max-width: 85vw;
+  }
+.text-box {
+    max-height: 55vh;
+  }
+}
+
+.row div .col-md-3 img{
+  height: 45px;
+}

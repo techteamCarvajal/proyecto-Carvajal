@@ -1,0 +1,55 @@
+<% @disable_nav = true %>
+<% @disable_foot = true %>
+
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+<section class="sec1">
+  
+  <div class="container">
+    <div class="section-title">
+        <h2>Iniciar sesión</h2>
+        <div class="section-subtitle">Iniciar sesión</div>
+        <span class="section-separator"></span>
+        <p>Este es el espacio del administrador</p>
+    </div>
+  </div>
+
+  <div class="container sign-in-container">
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form">
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <div class="field">
+                <%= f.label :email %><br/>
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+              </div>
+
+              <div class="field">
+                <%= f.label :password %><br/>
+                <%= f.password_field :password, autocomplete: "off" %>
+              </div>
+
+              <button type="submit" class="log-submit-btn">
+                <span>Iniciar sesión</span>
+              </button>
+
+              <div class="clearfix"></div>
+
+              <% if devise_mapping.rememberable? -%>
+                <div class="filter-tags">
+                  <%= f.check_box :remember_me %>
+                  <label for="check-a">Recuérdame</label>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

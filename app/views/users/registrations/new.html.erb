@@ -1,0 +1,108 @@
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+<section class="sec1">
+  
+  <div class="container">
+    <div class="section-title">
+        <h2>Registro</h2>
+        <div class="section-subtitle">Registro</div>
+        <span class="section-separator"></span>
+    </div>
+  </div>
+
+  <div class="container sign-in-container">
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form">
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              
+              <% if devise_error_messages!.present? %>
+                <script type="text/javascript">
+                  toastr['error']('<%= devise_error_messages!.gsub(/\t/, "").gsub(/\n/, "").html_safe %>')
+                </script>
+              <% end %>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="field">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="field">
+                    <%= f.label :cedula %><br />
+                    <%= f.text_field :cedula %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <%= f.label :nombres %><br />
+                    <%= f.text_field :nombres %>
+                  </div>
+                </div>
+          
+                <div class="col-md-6">
+                  <div class="field">
+                    <%= f.label :apellidos %><br />
+                    <%= f.text_field :apellidos %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <%= f.label :celular %><br />
+                    <%= f.text_field :celular %>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label>Situación Sentimental</label>
+                  <%= f.select :situacion_sentimental, options_for_select([["Soltera", "Soltera"], ["Casada", "Casada"], ["Emparejada", "Emparejada"], ["Viuda", "Viuda"],["Divorciada", "Divorciada"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <%= f.label :password, (@minimum_password_length) ? "Contraseña (#{@minimum_password_length} caracteres mínimo)" : "" %>
+                    <%= f.password_field :password, autocomplete: "off" %>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="field">
+                    <%= f.label :password_confirmation, "Confirmar contraseña" %><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                  <button type="submit" class="log-submit-btn">
+                    <span>Registrarse</span>
+                  </button>
+                </div>
+              </div>
+
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

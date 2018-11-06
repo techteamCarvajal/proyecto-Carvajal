@@ -1,0 +1,5 @@
+---
+applications:
+- name: NexoCalendar
+  random-route: true
+  memory: 256M

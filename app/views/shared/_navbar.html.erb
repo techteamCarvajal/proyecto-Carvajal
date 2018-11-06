@@ -1,0 +1,76 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<header class="main-header dark-header fs-header sticky">
+    <div class="header-inner">
+       <div class="logo-holder">
+            <%= link_to root_path do %>
+                <%= image_tag("logo-ver.png") %>
+            <% end %>
+        </div> 
+        <a class="add-list" onclick="clickButton()">Botón de emergencia<span><i class="fa fa-ambulance"></i></span></a>
+        <div class="nav-holder main-menu">
+            <nav>
+                <ul>
+                    <% if user_signed_in? %>
+                        <li>
+                            <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
+                            <ul>
+                                <li><a>Planificación</a></li>
+                                <li><a>Consejos de belleza</a></li>
+                                <li><a>Alimentación</a></li>
+                                <li><a> Notificaciones </a> </li>
+                                <li><%= link_to "Concientizate", "/education" %></li>
+                                <li><%= link_to "Mi diario", "/diary" %></li>
+                                <li><%= link_to "Comparte experiencias", "/blogs" %></li>
+                                <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="act-link">Notificaciones personalizadas (<%=@notifications.size%>) <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->   
+                            <ul>
+                                <% if @notifications.size == 0 %>
+                                    <li><a>No hay notificaciones para ti</a></li>
+                                <% end %>
+                                <% @notifications.each do |notification| %>
+                                    <li><a><%= notification["text"] %></a></li>
+                                <% end %>
+                            </ul>
+                            <!--second level end-->                                
+                        </li>
+                    <% else %>
+                        <li>            
+                            <%= link_to new_user_session_path do %>
+                                Iniciar sesión
+                            <% end %>
+                        </li>
+                        <li>
+                            <%= link_to new_user_registration_path do %>
+                                Registrarse
+                            <% end %>
+                        </li>
+                           <li><%= link_to "Comparte experiencias", "/blogs" %></li>
+                    <% end %>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="nav-button-wrap color-bg">
+            <div class="nav-button">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+    function clickButton(){
+        swal({
+            position: 'top-end',
+            type: 'success',
+            title: 'Atención',
+            text: 'Las autoridades ya han sido notificadas y están en camino',
+            showConfirmButton: true,
+            showCancelButton: true
+        })
+    }
+</script>
