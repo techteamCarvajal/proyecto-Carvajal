@@ -16,7 +16,11 @@ Rails.application.routes.draw do
 	get "/diary" => "pages#problems", as: "my-diary"
 
 	get "/education" => "pages#education", as: "education"
-
+	get "/nosotros" => "pages#us", as: "nosotros"
+	get "/works" => "pages#works", as: "como_funciona_empresa"
+	get "/works_candidato" => "pages#works_candidato", as: "como_funciona_candidato"
+	get "/faq" => "pages#faq", as: "faq_empresa"
+	get "/faq_candidato" => "pages#faq_candidato", as: "faq_candidato"
 
 	post "/save_rec" => "recognitions#analyze_photo", as: "image_save"
 

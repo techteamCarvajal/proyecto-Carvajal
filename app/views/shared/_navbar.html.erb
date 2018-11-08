@@ -6,7 +6,7 @@
                 <%= image_tag("werk-logo.png") %>
             <% end %>
         </div> 
-        <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a>
+     <!--   <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a> -->
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
@@ -39,17 +39,38 @@
                             <!--second level end-->                                
                         </li>
                     <% else %>
+                        
+                      
+                           
+                           <li><%= link_to root_path do %>
+                               Inicio
+                            <% end %>
+                           </li>
+
+                           <li><%= link_to "Nosotros", "/nosotros" %></li>
+                          
+                           <li>
+                            <a>Cómo funciona</a>
+                            <ul>
+                                 <li><%= link_to "Empresa", "/works" %></li>
+                                   <li><%= link_to "Candidato", "/works_candidato" %></li>
+                            </ul>
+                        </li>
+
+                         <li>
+                            <a>FAQ</a>
+                            <ul>
+                                 <li><%= link_to "Empresa", "/faq" %></li>
+                                   <li><%= link_to "Candidato", "/faq_candidato" %></li>
+                            </ul>
+                        </li>
+
                         <li>            
                             <%= link_to new_user_session_path do %>
                                 Iniciar sesión
                             <% end %>
                         </li>
-                        <li>
-                            <%= link_to new_user_registration_path do %>
-                                Registrarse
-                            <% end %>
-                        </li>
-                           <li><%= link_to "Blogs y capacitaciones", "/blogs" %></li>
+
                     <% end %>
                 </ul>
             </nav>

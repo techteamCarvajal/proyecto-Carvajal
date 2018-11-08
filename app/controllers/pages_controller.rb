@@ -4,12 +4,27 @@ class PagesController < ApplicationController
 	end
 
 	def problems
-
 	end
 
-	def education
-		
+	def education		
 	end
+
+	def us		
+	end
+	
+	def works	
+	end
+
+	def works_candidato	
+	end
+
+	def faq
+	end
+
+
+	def faq_candidato
+	end
+
 
 
 end

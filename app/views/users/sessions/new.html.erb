@@ -4,52 +4,89 @@
 }
 </style>
 
-<section class="sec1">
-  
-  <div class="container">
-    <div class="section-title">
-        <h2>Iniciar sesión</h2>
-        <div class="section-subtitle">Iniciar sesión</div>
-        <span class="section-separator"></span>
-    </div>
-  </div>
 
-  <div class="container sign-in-container">
-    <div class="tabs-container">
-      <div class="tab">
-        <div id="tab-1" class="tab-content">
-          <div class="custom-form">
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-              <div class="field">
-                <%= f.label :correo%><br/>
-                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-              </div>
 
-              <div class="field">
-                <%= f.label :contraseña %><br/>
-                <%= f.password_field :password, autocomplete: "off" %>
-              </div>
 
-              <button type="submit" class="log-submit-btn">
-                <span>Iniciar sesión</span>
-              </button>
 
-              <div class="clearfix"></div>
 
-              <% if devise_mapping.rememberable? -%>
-                <div class="filter-tags">
-                  <%= f.check_box :remember_me %>
-                  <label for="check-a">Recuérdame</label>
-                </div>
-              <% end %>
-            <% end %>
-            <div class="lost_password">
-              <%= link_to "Perdiste tu contraseña", new_user_password_path %><br>
-              <%= link_to "Regístrate", new_user_registration_path %>
-            </div>
-          </div>
+
+        <div class="process-wrap fl-wrap">
+            <ul>
+                <li>
+                    <div class="process-item">
+                        <span class="process-count"></span>
+                        <div class="time-line-icon"><i class="fa fa-bars"></i></div>
+                            <h2>Candidatos</h2>
+                            <h4>Aún no estás registrado</h4>
+                            <h6>Aplica a las mejores ofertas</h6>
+
+                             <%= link_to "Regístrate", new_user_registration_path %>
+                         </div>
+                    <span class="pr-dec"></span>
+                </li>
+                <li>
+
+                       <div class="container">
+                        <div class="section-title">
+                            <h2>Iniciar sesión</h2>
+                            <div class="section-subtitle">Iniciar sesión</div>
+                            <span class="section-separator"></span>
+                        </div>
+                      </div>
+
+
+
+                      <div class="container sign-in-container">
+                      <div class="tabs-container">
+                        <div class="tab">
+                          <div id="tab-1" class="tab-content">
+                            <div class="custom-form">
+                              <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                                <div class="field">
+                                  <%= f.label :correo%><br/>
+                                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                                </div>
+
+                                <div class="field">
+                                  <%= f.label :contraseña %><br/>
+                                  <%= f.password_field :password, autocomplete: "off" %>
+                                </div>
+
+                                <button type="submit" class="log-submit-btn">
+                                  <span>Iniciar sesión</span>
+                                </button>
+
+                                <div class="clearfix"></div>
+
+                                <% if devise_mapping.rememberable? -%>
+                                  <div class="filter-tags">
+                                    <%= f.check_box :remember_me %>
+                                    <label for="check-a">Recuérdame</label>
+                                  </div>
+                                <% end %>
+                              <% end %>
+                              <div class="lost_password">
+                                <%= link_to "Olvide mi contraseña", new_user_password_path %><br>
+                             
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <span class="pr-dec"></span>
+                </li>
+                <li>
+                   <div class="process-item">
+                        <span class="process-count"></span>
+                        <div class="time-line-icon"><i class="fa fa-bars"></i></div>
+                            <h2>Empresas</h2>
+                            <h4>¿Aún no estás registrado?</h4>
+                            <h6>Encuentra los mejores profesionales</h6>
+
+                             <%= link_to "Regístrate", new_user_registration_path %>
+                         </div>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
