@@ -6334,3 +6334,213 @@ Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:53:08 -0500
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 NotificationChannel is transmitting the subscription confirmation
 NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-08 13:54:43 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (142.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 1680ms (Views: 1645.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:54:46 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:54:46 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:55:06 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (54.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.1ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 194ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:07 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:55:07 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:07 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:09 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:55:09 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:09 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:55:12 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:12 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:55:12 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:12 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:55:56 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (54.6ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (6.1ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 198ms (Views: 196.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:56 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:55:56 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:55:56 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:56:16 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (65.9ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 209ms (Views: 207.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:56:16 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:56:17 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:56:17 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:57:24 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (54.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.0ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 220ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:57:24 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:57:25 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:57:25 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 13:57:47 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (54.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.1ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 187ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:57:48 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 13:57:48 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 13:57:48 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 14:00:44 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (28.9ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 299ms (Views: 282.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:44 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:00:44 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:44 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/works" for 127.0.0.1 at 2018-11-08 14:00:52 -0500
+Processing by PagesController#works as HTML
+  Rendering pages/works.html.erb within layouts/application
+  Rendered pages/works.html.erb within layouts/application (0.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 154.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:52 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:00:53 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:53 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/works_candidato" for 127.0.0.1 at 2018-11-08 14:00:57 -0500
+Processing by PagesController#works_candidato as HTML
+  Rendering pages/works_candidato.html.erb within layouts/application
+  Rendered pages/works_candidato.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:57 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:00:57 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:00:57 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-08 14:01:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:01:00 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:01:01 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:01:01 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 14:01:10 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (17.1ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:01:11 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:01:11 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:01:11 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
