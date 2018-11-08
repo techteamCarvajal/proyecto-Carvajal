@@ -3,10 +3,10 @@
     <div class="header-inner">
        <div class="logo-holder">
             <%= link_to root_path do %>
-                <%= image_tag("logo-ver.png") %>
+                <%= image_tag("werk-logo.png") %>
             <% end %>
         </div> 
-        <a class="add-list" onclick="clickButton()">Botón de emergencia<span><i class="fa fa-ambulance"></i></span></a>
+        <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a>
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
@@ -20,7 +20,7 @@
                                 <li><a> Notificaciones </a> </li>
                                 <li><%= link_to "Concientizate", "/education" %></li>
                                 <li><%= link_to "Mi diario", "/diary" %></li>
-                                <li><%= link_to "Comparte experiencias", "/blogs" %></li>
+                                <li><%= link_to "Blogs y capacitaciones", "/blogs" %></li>
                                 <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
                                 <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
                             </ul>
@@ -49,7 +49,7 @@
                                 Registrarse
                             <% end %>
                         </li>
-                           <li><%= link_to "Comparte experiencias", "/blogs" %></li>
+                           <li><%= link_to "Blogs y capacitaciones", "/blogs" %></li>
                     <% end %>
                 </ul>
             </nav>

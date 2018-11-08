@@ -222,7 +222,7 @@ source {
   box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2);
 }
 .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
-	background: #6b437a;
+	background: #102f41;
 }
 .lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {
   pointer-events: none;
@@ -1310,7 +1310,7 @@ body .pac-container{border-radius:0 0 4px 4px;box-shadow:none;border:1px solid #
     font-weight: normal;
     text-decoration: inherit;
 	content: "\f041";
-	color:#ee99aa;
+	color:#cfe3db;
 	top:-6px;
 	left:4px;
 	font-size:14px;
