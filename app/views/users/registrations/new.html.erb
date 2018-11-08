@@ -43,49 +43,20 @@
                 </div>
               </div>
 
+
+              <div class="row">
               <div class="col-md-6">
-                  <label>Situación Sentimental</label>
+                  <label>Tipo de documento</label>
                   <%= f.select :situacion_sentimental, options_for_select([["Soltera", "Soltera"], ["Casada", "Casada"], ["Emparejada", "Emparejada"], ["Viuda", "Viuda"],["Divorciada", "Divorciada"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
                 </div>
-              </div>
 
-
-
-
-              
-              <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="field">
-                    <%= f.label :email %><br />
-                    <%= f.email_field :email %>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="field">
-                    <%= f.label :cedula %><br />
+                    <%= f.label :número_documento %><br />
                     <%= f.text_field :cedula %>
-                  </div>
-                </div>
+                  </div>   
               </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="field">
-                    <%= f.label :nombres %><br />
-                    <%= f.text_field :nombres %>
-                  </div>
-                </div>
-          
-                <div class="col-md-6">
-                  <div class="field">
-                    <%= f.label :apellidos %><br />
-                    <%= f.text_field :apellidos %>
-                  </div>
-                </div>
-              </div>
 
               <div class="row">
                 <div class="col-md-6">
@@ -94,12 +65,17 @@
                     <%= f.text_field :celular %>
                   </div>
                 </div>
-
+          
                 <div class="col-md-6">
-                  <label>Situación Sentimental</label>
-                  <%= f.select :situacion_sentimental, options_for_select([["Soltera", "Soltera"], ["Casada", "Casada"], ["Emparejada", "Emparejada"], ["Viuda", "Viuda"],["Divorciada", "Divorciada"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                  <div class="field">
+                    <%= f.label :correo_electrónico %><br />
+                    <%= f.text_field :email %>
+                  </div>
                 </div>
               </div>
+            
+              
+            
 
               <div class="row">
                 <div class="col-md-6">
