@@ -6544,6 +6544,7 @@ Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:01:11 -0500
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 NotificationChannel is transmitting the subscription confirmation
 NotificationChannel is streaming from notification_channel
+<<<<<<< HEAD
 Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 14:30:22 -0500
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Devise::RegistrationsController#new as HTML
@@ -6557,6 +6558,1293 @@ Completed 200 OK in 1906ms (Views: 1870.4ms | ActiveRecord: 0.5ms)
 
 Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:30:25 -0500
 Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:30:26 -0500
+=======
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:08:41 -0500
+  [1m[35m (11.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:08:41 -0500
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 NotificationChannel is transmitting the subscription confirmation
 NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:08:43 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (9968.0ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 10153ms (Views: 10116.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:08:54 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:08:54 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:08:54 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 14:09:02 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:02 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:09:02 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:02 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:09:04 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:04 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:09:04 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:04 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-08 14:09:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (110.8ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 172ms (Views: 159.1ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:07 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:09:07 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:07 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 14:09:21 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:21 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:09:21 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:21 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:09:33 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:33 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:09:33 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:09:33 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:22:15 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (34.0ms)
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:22:18 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_message.html.erb (0.4ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2928ms (Views: 2917.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 177ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:22:18 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:22:18 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:22:18 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:22:44 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (29.2ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 2498ms (Views: 2468.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:22:47 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:22:47 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:22:47 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:23:11 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (72.2ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (5.0ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 2579ms (Views: 2570.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:23:14 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:23:14 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:23:14 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:23:55 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (30.0ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 2399ms (Views: 2396.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:23:57 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:23:57 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:23:57 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:24:29 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (29.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:24:29 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:24:29 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:24:29 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 14:24:45 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.4ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_navbar.html.erb (10.9ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:24:46 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:24:46 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:24:46 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 14:25:11 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2327ms (Views: 2325.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:25:13 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:25:14 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:25:14 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 14:25:17 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (25.2ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 91ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:25:17 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 14:25:17 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 14:25:17 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:45:16 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (188.3ms)
+  Rendered shared/_favicon.html.erb (0.8ms)
+  Rendered shared/_navbar.html.erb (14.9ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 4260ms (Views: 4226.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:45:20 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:45:21 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:45:21 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:46:28 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2856ms (Views: 2848.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:46:31 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:46:31 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:46:31 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:46:36 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 2373ms (Views: 2370.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:46:38 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:46:38 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:46:38 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:47:51 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (25.2ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (14.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2522ms (Views: 2514.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:47:54 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:47:54 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:47:54 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:48:10 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (23.6ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2555ms (Views: 2552.2ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:12 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:48:12 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:12 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:48:35 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (23.6ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 2599ms (Views: 2596.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:37 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:48:37 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:37 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:48:53 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (24.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2432ms (Views: 2429.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:56 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:48:56 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:48:56 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:51:39 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (24.5ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (14.6ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 2689ms (Views: 2670.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:51:42 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:51:42 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:51:42 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:52:45 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (23.7ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 132ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:52:45 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:52:45 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:52:45 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:53:50 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_message.html.erb (1.0ms)
+Completed 200 OK in 2493ms (Views: 2490.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:53:53 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:53:53 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:53:53 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:54:16 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (14.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 2689ms (Views: 2686.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:19 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:19 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:19 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 15:54:30 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:31 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:31 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:31 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/works" for 127.0.0.1 at 2018-11-08 15:54:36 -0500
+Processing by PagesController#works as HTML
+  Rendering pages/works.html.erb within layouts/application
+  Rendered pages/works.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:36 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:36 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:36 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 15:54:43 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:43 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:43 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:43 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:54:47 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:47 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:47 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:47 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/faq" for 127.0.0.1 at 2018-11-08 15:54:51 -0500
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:51 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 15:54:51 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 15:54:51 -0500
+>>>>>>> b129433f70a6ee621e997fdcf72d56c0228293b0
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for 127.0.0.1 at 2018-11-08 16:32:44 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4004.9ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 4489ms (Views: 4368.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:32:49 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:32:49 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/nosotros" for 127.0.0.1 at 2018-11-08 16:33:11 -0500
+Processing by PagesController#us as HTML
+  Rendering pages/us.html.erb within layouts/application
+  Rendered pages/us.html.erb within layouts/application (0.7ms)
+  Rendered shared/_favicon.html.erb (1.1ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 310ms (Views: 277.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:11 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:11 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:11 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/works" for 127.0.0.1 at 2018-11-08 16:33:17 -0500
+Processing by PagesController#works as HTML
+  Rendering pages/works.html.erb within layouts/application
+  Rendered pages/works.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_message.html.erb (9.9ms)
+Completed 200 OK in 72ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:17 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:17 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:17 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:20 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:20 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:20 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/works_candidato" for 127.0.0.1 at 2018-11-08 16:33:24 -0500
+Processing by PagesController#works_candidato as HTML
+  Rendering pages/works_candidato.html.erb within layouts/application
+  Rendered pages/works_candidato.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:24 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:24 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:24 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/faq" for 127.0.0.1 at 2018-11-08 16:33:28 -0500
+Processing by PagesController#faq as HTML
+  Rendering pages/faq.html.erb within layouts/application
+  Rendered pages/faq.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:28 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:28 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:28 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/faq_candidato" for 127.0.0.1 at 2018-11-08 16:33:32 -0500
+Processing by PagesController#faq_candidato as HTML
+  Rendering pages/faq_candidato.html.erb within layouts/application
+  Rendered pages/faq_candidato.html.erb within layouts/application (0.3ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:32 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:32 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:32 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-08 16:33:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (162.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 247ms (Views: 225.4ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:35 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:33:35 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:33:35 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 16:34:28 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (10.4ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:34:28 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:34:28 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:34:28 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 16:35:23 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (3.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.4ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 2724ms (Views: 2722.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:35:26 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:35:26 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:35:26 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddTipoDocumentoToUsers (20181108213726)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (31.0ms)[0m  [1m[35mALTER TABLE "users" ADD "tipo_documento" varchar[0m
+  [1m[35mSQL (8.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181108213726"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNumeroDocumentoToUsers (20181108214243)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "numero_documento" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181108214243"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_administrators_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_administrators_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recognitions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_recordings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_texts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 16:44:25 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (115.7ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_message.html.erb (0.8ms)
+Completed 200 OK in 2230ms (Views: 2211.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:44:28 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:44:28 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 16:44:49 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (4.0ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (6.6ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 179ms (Views: 177.9ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:44:49 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:44:49 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:44:49 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 16:47:35 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (3.3ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.7ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 3905ms (Views: 3904.4ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:47:39 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:47:39 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:47:39 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for 127.0.0.1 at 2018-11-08 16:54:21 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oLYWnl1/E4N8X2GDDD5yiQAszbrzUqTQ0gWuY29tO7jPVyf6us9u9mkWTHH/ukS3EalEvX9G2q7ijG1fiABXhw==", "user"=>{"nombres"=>"Maria Alejandra", "apellidos"=>"Torres Aguirre", "tipo_documento"=>"Cedula", "numero_documento"=>"1039467521", "celular"=>"3182499059", "email"=>"maria.torres@carvajal.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "maria.torres@carvajal.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (7.9ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (6.4ms)
+  Rendered shared/_message.html.erb (1.0ms)
+Completed 200 OK in 797ms (Views: 288.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:54:23 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:54:23 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for 127.0.0.1 at 2018-11-08 16:54:40 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwJWLHh/7ifQWTreRfBDZBOAaeAl33KymV07+qyIatEc42dIn8+TUsUQFyy2dHVaAgXg56nLDMyp1PjGS+UG7g==", "user"=>{"nombres"=>"Maria Alejandra", "apellidos"=>"Torres Aguirre", "tipo_documento"=>"Cedula", "numero_documento"=>"1039467521", "celular"=>"3182499059", "email"=>"maria.torres@carvajal.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "maria.torres@carvajal.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (17.7ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 447ms (Views: 290.3ms | ActiveRecord: 0.2ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:54:40 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:54:40 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:54:40 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for 127.0.0.1 at 2018-11-08 16:57:14 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CUTm/gwdLmThzEN4pRExGb5rMzxkutAgCuLKEVuDr09mpdea661TEfSFbopWlQcnr+66O+iurl46awktvO7DcA==", "user"=>{"nombres"=>"Maria Alejandra", "apellidos"=>"Torres Aguirre", "tipo_documento"=>"Cedula", "numero_documento"=>"1039467521", "celular"=>"3182499059", "email"=>"maria.torres@carvajal.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "maria.torres@carvajal.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (3.7ms)
+  Rendered shared/_favicon.html.erb (0.4ms)
+  Rendered shared/_navbar.html.erb (17.7ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 592ms (Views: 445.5ms | ActiveRecord: 0.3ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:57:14 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:57:15 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:57:15 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for 127.0.0.1 at 2018-11-08 16:58:02 -0500
+  
+SyntaxError (/Users/estudiante/Desktop/proyecto-Carvajal/app/controllers/application_controller.rb:9: syntax error, unexpected ',', expecting ']'
+...tizer.permit(:sign_up, keys: [, :celular, :nombres, :apellid...
+...                              ^):
+  
+app/controllers/application_controller.rb:9: syntax error, unexpected ',', expecting ']'
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:58:14 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:14 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for 127.0.0.1 at 2018-11-08 16:58:23 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jeYgL09zBuCngX5QjplkDpKeZ/2U4dTSkDeOnobGWUHiBxFLqMN7lbLIU6J9HVIwgxvu+hj1qqygvk2iYas1fg==", "user"=>{"nombres"=>"Maria Alejandra", "apellidos"=>"Torres Aguirre", "tipo_documento"=>"Cedula", "numero_documento"=>"1039467521", "celular"=>"3182499059", "email"=>"maria.torres@carvajal.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "maria.torres@carvajal.com"], ["LIMIT", 1]]
+  [1m[35mSQL (14.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "celular", "nombres", "apellidos", "tipo_documento", "numero_documento") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "maria.torres@carvajal.com"], ["encrypted_password", "$2a$11$FEfzNLqCIy/IDzoQwGMaQeGfU3kDWWrPr5LohNF9hNdusDSl4sxXq"], ["created_at", "2018-11-08 21:58:24.072398"], ["updated_at", "2018-11-08 21:58:24.072398"], ["celular", "3182499059"], ["nombres", "Maria Alejandra"], ["apellidos", "Torres Aguirre"], ["tipo_documento", "Cedula"], ["numero_documento", "1039467521"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 213ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 16:58:24 -0500
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRecording Load (0.4ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" WHERE "recordings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mText Load (0.3ms)[0m  [1m[34mSELECT "texts".* FROM "texts" WHERE "texts"."user_id" = ?[0m  [["user_id", 3]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (114.9ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (21.6ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 588ms (Views: 432.8ms | ActiveRecord: 1.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:25 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:58:25 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:25 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/admin" for 127.0.0.1 at 2018-11-08 16:58:44 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/administrators/sign_in" for 127.0.0.1 at 2018-11-08 16:58:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRecording Load (0.1ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" WHERE "recordings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mText Load (0.1ms)[0m  [1m[34mSELECT "texts".* FROM "texts" WHERE "texts"."user_id" = ?[0m  [["user_id", 3]]
+  Rendering administrators/sessions/new.html.erb within layouts/application
+  Rendered administrators/sessions/new.html.erb within layouts/application (19.6ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 202ms (Views: 190.7ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:44 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 16:58:44 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:44 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/administrators/sign_in" for 127.0.0.1 at 2018-11-08 16:58:51 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZpzz6aH1oGok5ZA5WLE8T8Xrc3fkrkhNKcce6ioHbXqe0KrQTer9L3au7IW5vLPLpIkylOGx18ELt9HT8Vxig==", "administrator"=>{"email"=>"andres178bur@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRecording Load (0.1ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" WHERE "recordings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mText Load (0.1ms)[0m  [1m[34mSELECT "texts".* FROM "texts" WHERE "texts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mAdministrator Load (26.5ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."email" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["email", "andres178bur@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 206ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2018-11-08 16:58:51 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (13.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "administrators"[0m
+  [1m[36mAdministrator Load (0.1ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" ORDER BY "administrators"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recognitions"[0m
+  [1m[36mRecognition Load (18.7ms)[0m  [1m[34mSELECT  "recognitions".* FROM "recognitions" ORDER BY "recognitions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recordings"[0m
+  [1m[36mRecording Load (0.3ms)[0m  [1m[34mSELECT  "recordings".* FROM "recordings" ORDER BY "recordings"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "texts"[0m
+  [1m[36mText Load (0.3ms)[0m  [1m[34mSELECT  "texts".* FROM "texts" ORDER BY "texts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (95.3ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.8ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_navigation.html.haml (13.5ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.9ms)
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/layouts/rails_admin/pjax.html.haml (3.8ms)
+Completed 200 OK in 1988ms (Views: 1196.1ms | ActiveRecord: 35.6ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 16:58:53 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 16:58:57 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (238.8ms)
+Completed 200 OK in 282ms (Views: 266.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/user/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 16:58:59 -0500
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"3"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (13.5ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (2.1ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" WHERE "blogs"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" ORDER BY blogs.id desc[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (2, 1)[0m
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (92.0ms)
+  [1m[36mText Load (0.2ms)[0m  [1m[34mSELECT "texts".* FROM "texts" WHERE "texts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "texts"[0m
+  [1m[36mText Load (0.1ms)[0m  [1m[34mSELECT "texts".* FROM "texts" ORDER BY texts.id desc[0m
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (3.6ms)
+  [1m[36mRecording Load (0.1ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" WHERE "recordings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recordings"[0m
+  [1m[36mRecording Load (0.1ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" ORDER BY recordings.id desc[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.5ms)
+  [1m[36mRecognition Load (0.2ms)[0m  [1m[34mSELECT "recognitions".* FROM "recognitions" WHERE "recognitions"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "recognitions"[0m
+  [1m[36mRecognition Load (43.3ms)[0m  [1m[34mSELECT "recognitions".* FROM "recognitions" ORDER BY recognitions.id desc[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1[0m
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (49.9ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (6.0ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (382.1ms)
+Completed 200 OK in 429ms (Views: 374.1ms | ActiveRecord: 45.7ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 16:59:19 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (39.6ms)
+Completed 200 OK in 78ms (Views: 69.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/administrator?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 17:00:27 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"administrator"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" ORDER BY administrators.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (39.7ms)
+Completed 200 OK in 88ms (Views: 80.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/administrator/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 17:00:33 -0500
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"administrator"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/_submit_buttons.html.haml (5.7ms)
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (55.5ms)
+Completed 200 OK in 93ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-11-08 17:01:04 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/estudiante/.rvm/gems/ruby-2.5.1/gems/rails_admin-1.4.2/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (39.5ms)
+Completed 200 OK in 133ms (Views: 123.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/administrators/sign_out" for 127.0.0.1 at 2018-11-08 17:01:19 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EwnbN+dZwrCLtFJPS28LQ65uZ3UrwU770b+z1H75jZaENjxnvJZlnxI/0XTfuxqcQJRgdQTTUzgFKKeDp6TWCw=="}
+  [1m[36mAdministrator Load (0.2ms)[0m  [1m[34mSELECT  "administrators".* FROM "administrators" WHERE "administrators"."id" = ? ORDER BY "administrators"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRecording Load (0.1ms)[0m  [1m[34mSELECT "recordings".* FROM "recordings" WHERE "recordings"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[36mText Load (0.1ms)[0m  [1m[34mSELECT "texts".* FROM "texts" WHERE "texts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 17:01:19 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (114.9ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (13.6ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 431ms (Views: 413.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 17:01:20 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:01:20 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-08 17:01:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered shared/_favicon.html.erb (0.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:01:37 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 17:01:37 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:01:37 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-08 17:01:40 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_favicon.html.erb (0.2ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:01:40 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 17:01:40 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:01:40 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:06:56 -0500
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for 127.0.0.1 at 2018-11-08 17:07:04 -0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:07:04 -0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-08 17:07:05 -0500
+NotificationChannel stopped streaming from notification_channel

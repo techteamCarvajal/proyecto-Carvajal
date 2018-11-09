@@ -47,13 +47,14 @@
               <div class="row">
               <div class="col-md-6">
                   <label>Tipo de documento</label>
-                  <%= f.select :situacion_sentimental, options_for_select([["Soltera", "Soltera"], ["Casada", "Casada"], ["Emparejada", "Emparejada"], ["Viuda", "Viuda"],["Divorciada", "Divorciada"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                  <%= f.select :tipo_documento, options_for_select([["Cedula", "Cedula"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
                 </div>
+                
 
                 <div class="col-md-6">
                   <div class="field">
                     <%= f.label :número_documento %><br />
-                    <%= f.text_field :cedula %>
+                    <%= f.text_field :numero_documento %>
                   </div>   
               </div>
 
