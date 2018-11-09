@@ -6,12 +6,6 @@
 
 <section class="sec1">
   
-  <div class="container">
-    <div class="section-title">
-        <h2>Actualizar información de perfil</h2>
-        <span class="section-separator"></span>
-    </div>
-  </div>
 
   <div class="container sign-in-container">
     <div class="tabs-container">
@@ -23,88 +17,190 @@
                 <script type="text/javascript">
                   toastr['error']('<%= devise_error_messages!.gsub(/\t/, "").gsub(/\n/, "").html_safe %>')
                 </script>
-              <% end %>
-              
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="field">
-                    <%= f.label :email %><br />
-                    <%= f.email_field :email %>
-                  </div>
-                </div>
-              </div>
+              <% end %>        
 
               <div class="row">
-                <div class="col-md-12">
-                  <div class="field">
-                    <%= f.label :cedula %><br />
-                    <%= f.text_field :cedula %>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <div class="field">
                     <%= f.label :nombres %><br />
                     <%= f.text_field :nombres %>
                   </div>
                 </div>
           
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <div class="field">
                     <%= f.label :apellidos %><br />
                     <%= f.text_field :apellidos %>
                   </div>
                 </div>
+
+               <div class="col-md-4">
+                  <div class="field">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email %>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="row">
-                <div class="col-md-6">
+
+               <div class="row">
+                 <div class="col-md-4">
                   <div class="field">
-                    <%= f.label :celular %><br />
+                    <%= f.label :fecha_nacimiento %><br />
+                    <%= f.date_field :fecha_nacimiento %>
+                  </div>
+                </div>
+
+              <div class="col-md-4">
+                  <label>Tipo de documento</label>
+                  <%= f.select :tipo_documento, options_for_select([["Cedula", "Cedula"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                </div>
+
+
+                <div class="col-md-4">
+                  <div class="field">
+                   <label>Número  de documento</label>
+                    <%= f.text_field :numero_documento %>
+                  </div>
+                </div>
+
+              </div>
+
+     
+
+              <div class="row">
+              
+                  <div class="col-md-4">
+                  <div class="field">
+                    <label>Correo electrónico</label>
+                    <%= f.text_field :email %>
+                  </div>
+                </div>
+
+                 <div class="col-md-4">
+                  <div class="field">
+                   <label>Celular</label>
                     <%= f.text_field :celular %>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <label>Situación Sentimental</label>
-                  <%= f.select :situacion_sentimental, options_for_select([["Soltera", "Soltera"], ["Casada", "Casada"], ["Emparejada", "Emparejada"], ["Viuda", "Viuda"],["Divorciada", "Divorciada"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                 <div class="col-md-4">
+                  <div class="field">
+                    <label>Dirección</label>
+                    <%= f.text_field :direccion %>
+                  </div>
                 </div>
+
+
               </div>
+   
 
               <div class="row">
-                <div class="col-md-6">
+               
+           <div class="col-md-4">
+                   <label>Departamento</label>
+                  <%= f.select :departamento, options_for_select([["Cedula", "Cedula"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                </div>
+                
+
+                 <div class="col-md-4">
+                   <label>Ciudad</label>
+                   <%= f.select :ciudad, options_for_select([["Cedula", "Cedula"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %>  
+                </div>
+
+
+                <div class="col-md-4">
                   <div class="field">
-                    <%= f.label :password, (@minimum_password_length) ? "Contraseña (#{@minimum_password_length} caracteres mínimo)" : "" %>
+                   <label>Nivel educativo</label>
+                   <%= f.select :nivel_educativo, options_for_select([["Técnica", "Técnica"], ["Tecnologia", "Tecnologia"],["Pregrado", "Pregrado"],["Especialización", "Especialización"],["Maestria", "Maestria"],["Doctorado", "Doctorado"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                  </div>
+                </div>
+
+              
+              </div>
+
+
+
+              <div class="row">
+               
+                 <div class="col-md-4">
+                  <div class="field">
+                    <label>Nombre Carrera</label>
+                    <%= f.text_field :carrera %>
+                  </div>
+                </div>
+
+                 <div class="col-md-4">
+                  <div class="field">
+                   <label>Experiencia laboral</label>
+                    <%= f.text_field :experiencia_laboral %>
+                  </div>
+                </div>
+
+                 <div class="col-md-4">
+                  <div class="field">
+                    <label>Referencia laboral</label>
+                    <%= f.text_field :referencia_laboral %>
+                  </div>
+                </div>
+               
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="field">
+                   <label>Cargar hoja de vida</label>
+                    <%= f.file_field :attachment %>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="field">
+                   <label>Celular referencia</label>
+                    <%= f.text_field :hoja_vida %>
+                  </div>
+                </div>
+            
+
+                <div class="col-md-4">
+                  <div class="field">
+                    <%= f.label :password  %>
                     <%= f.password_field :password, autocomplete: "off" %>
                   </div>
                 </div>
 
-                <div class="col-md-6">
+               
+              </div>
+
+
+              <div class="row">
+
+                <div class="col-md-4">
                   <div class="field">
                     <%= f.label :password_confirmation, "Confirmar contraseña" %><br />
                     <%= f.password_field :password_confirmation, autocomplete: "off" %>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4">
                   <div class="field">
-                    <%= f.label :current_password %> <i>(necesitamos tu contraseña para confirmar cambios)</i><br />
+                    <%= f.label :current_password %><br />
                     <%= f.password_field :current_password, autocomplete: "current-password" %>
                   </div>
                 </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-8 col-md-offset-4">
+                <div class="col-md-4">
                   <button type="submit" class="log-submit-btn">
                     <span>Actualizar</span>
                   </button>
                 </div>
+
               </div>
+
+             
+                
+            
             <% end %>
           </div>
         </div>

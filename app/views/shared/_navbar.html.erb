@@ -14,14 +14,14 @@
                         <li>
                             <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
                             <ul>
-                                <li><a>Planificación</a></li>
-                                <li><a>Consejos de belleza</a></li>
-                                <li><a>Alimentación</a></li>
-                                <li><a> Notificaciones </a> </li>
+                               
+                                <li><%= link_to "Completar hoja de vida", edit_user_registration_path %></li>
+                                <li><%= link_to "Mi perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Procesos", edit_user_registration_path %></li>          
                                 <li><%= link_to "Concientizate", "/education" %></li>
                                 <li><%= link_to "Mi diario", "/diary" %></li>
-                                <li><%= link_to "Blogs y capacitaciones", "/blogs" %></li>
-                                <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Blogs y capacitaciones", "/blogs" %></li>    
                                 <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
                             </ul>
                         </li>
