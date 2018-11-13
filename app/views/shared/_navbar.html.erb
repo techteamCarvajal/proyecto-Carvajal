@@ -15,9 +15,7 @@
                             <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
                             <ul>
                                
-                                <li><%= link_to "Completar hoja de vida", edit_user_registration_path %></li>
-                                <li><%= link_to "Mi perfil", "/profile" %></li>
-                                <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Perfil", edit_user_registration_path %></li>
                                 <li><%= link_to "Procesos", edit_user_registration_path %></li>          
                                 <li><%= link_to "Concientizate", "/education" %></li>
                                 <li><%= link_to "Mi diario", "/diary" %></li>
