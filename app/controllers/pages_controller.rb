@@ -26,5 +26,7 @@ class PagesController < ApplicationController
 	end
 
 
+	def profile
+	end
 
 end

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 	get "/tones" => "tones#list", as: "index_tones"
 	get "/diary" => "pages#problems", as: "my-diary"
 
+	get "/profile" => "pages#profile", as: "mi_perfil"
 	get "/education" => "pages#education", as: "education"
 	get "/nosotros" => "pages#us", as: "nosotros"
 	get "/works" => "pages#works", as: "como_funciona_empresa"
