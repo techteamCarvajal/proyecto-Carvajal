@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
  
-  devise_for :companies
+  
    resources :resumes, only: [:index, :new, :create, :destroy]
 
 
+    devise_for :companies   
 	devise_for :administrators
 	devise_for :users
 	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
