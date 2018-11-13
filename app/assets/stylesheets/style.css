@@ -866,6 +866,9 @@ section.parallax-section .bg {
 	padding: 50px;
     margin-top: 225px;
 }
+.register_container .section-title{
+	margin-top: 0;
+}
 .section-title .breadcrumbs {
 	margin-top:20px;
 }
@@ -2016,7 +2019,7 @@ section.gray-section .section-separator {
 	color:#fff;
 }
 .filter-tags {
-	margin-top:30px;
+	margin-top:0;
 }
 .fh-col-list-wrap .filter-tags{
 	margin-bottom:20px;
@@ -5216,7 +5219,9 @@ footer.main-footer.fixed-footer {
 }
 
 
-
+.session_cont{
+	margin-top: 200px;
+}
 .session .process-item h2{
 	font-size: 34px;
     color: white;
@@ -5241,7 +5246,7 @@ footer.main-footer.fixed-footer {
 	margin-top: 0;
 }
 .session li{
-	width:30%;
+	width:30.3%;
 	margin: 20px;
 	height: 400px;
 	background-color: #7F949F;
@@ -5275,7 +5280,14 @@ footer.main-footer.fixed-footer {
 
 .session .process-item h4{
 	text-align: center;
-	color: blue;
+	margin-top: 35px;
+	} 
+
+	.session .process-item h6{
+	text-align: center;
+	margin-top: 45px;
+	color: #fff;
+	font-size: 24px;
 	} 
 .process-item:hover .process-count {
 	opacity:0.3;
@@ -5284,12 +5296,12 @@ footer.main-footer.fixed-footer {
 	margin-top: -20px;
 }
 .pr-dec {
-	position:absolute;
-	top:50%;
-	right:-50px;
-	width:150px;
-	height:1px;
-	border-bottom:1px solid #eee;
+	position: absolute;
+    top: 10%;
+    right: -23px;
+    width: 5px;
+    height: 80%;
+    background: #e5e25a;
 }
 .process-end {
 	display:inline-block;
@@ -6595,3 +6607,63 @@ header.main-header {
 	text-align: left;
 }
 
+.btn-containter{
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+}
+
+.btn-containter .btn{
+	float: none;
+	    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    font-size: 24px;
+    color: white;
+    background: #00273C;
+    border: 0;
+        transition: all 300ms linear;
+}
+
+.btn-containter .btn:hover{
+    background: #e5e25a;
+}
+
+.title_text{
+	font-size: 32px;
+    color: white;
+    font-weight: 200;
+}
+
+.singinsito .custom-form label{
+	font-size: 18px;
+    color: white;
+    font-weight: 200;
+	text-align: center;
+}
+
+.filter-tags label{
+	font-size: 12px !important;
+}
+.singinsito input{
+	border-radius: 0 !important;
+	border:0 !important;
+	background-color: white !important;
+}
+
+.boton_inicio{
+	position: relative;
+	margin-top: 10px;
+	top: -25px;
+}
+.lost_password{
+	width: 100%;
+	position: absolute;
+}
+
+.lost_password a{
+		float: none;
+
+	color: white;
+	text-align: center;
+}
