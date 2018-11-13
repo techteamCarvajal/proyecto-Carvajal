@@ -3,8 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
-    	
                      
 		  validates :celular, :presence => {:message => ' no es valido el # de celular!'},
                      :numericality => true,
@@ -18,5 +16,7 @@ class User < ApplicationRecord
       has_many :texts, dependent: :destroy
       has_many :recordings, dependent: :destroy
       has_many :recognitions, dependent: :destroy
+
+      mount_uploader :attachment, AttachmentUploader 
     
 end

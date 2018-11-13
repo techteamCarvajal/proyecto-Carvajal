@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+# Gema para subir archivos
+gem 'carrierwave', '~> 1.0'
+
 # Gema para administrador
 gem 'rails_admin', '~> 1.3'
 # Api para la autenticación
