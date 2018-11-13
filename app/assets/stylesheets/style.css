@@ -866,6 +866,9 @@ section.parallax-section .bg {
 	padding: 50px;
     margin-top: 225px;
 }
+.register_container .section-title{
+	margin-top: 0;
+}
 .section-title .breadcrumbs {
 	margin-top:20px;
 }
@@ -5275,7 +5278,14 @@ footer.main-footer.fixed-footer {
 
 .session .process-item h4{
 	text-align: center;
-	color: blue;
+	margin-top: 35px;
+	} 
+
+	.session .process-item h6{
+	text-align: center;
+	margin-top: 45px;
+	color: #fff;
+	font-size: 24px;
 	} 
 .process-item:hover .process-count {
 	opacity:0.3;
@@ -6595,3 +6605,49 @@ header.main-header {
 	text-align: left;
 }
 
+.btn-containter{
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+}
+
+.btn-containter .btn{
+	float: none;
+	    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    font-size: 24px;
+    color: white;
+    background: #00273C;
+    border: 0;
+        transition: all 300ms linear;
+}
+
+.btn-containter .btn:hover{
+    background: #e5e25a;
+}
+
+.title_text{
+	font-size: 32px;
+    color: white;
+    font-weight: 200;
+}
+
+.singinsito .custom-form label{
+	font-size: 24px;
+    color: white;
+    font-weight: 200;
+	text-align: center;
+}
+
+.singinsito input{
+	border-radius: 0 !important;
+	border:0 !important;
+	background-color: white !important;
+}
+
+.boton_inicio{
+	position: relative;
+	margin-top: 10px;
+	top: -25px;
+}
