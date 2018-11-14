@@ -711,7 +711,7 @@ width: 100%;
 }
 
 .dark-header .nav-holder nav li:hover a  {
-	color:#e5e25a;
+	color:#8A9847;
 }
 .nav-holder nav li a:before {
 	content:'';
@@ -6735,4 +6735,39 @@ header.main-header {
 
 .registro{
 	max-width: 800px !important;
+}
+
+.registro input[type=file] {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+}
+
+.registro input[type=file]:before {
+        width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 0px;
+    content: 'Cargar hoja de vida';
+    display: inline-block;
+    background: transparent;
+    color: white;
+    text-align: left;
+}
+#user_cv{
+	padding:0;
+	 background: #8A9847;
+	     color: transparent;
+	     transition: all 0.3s ease;
+}
+
+#user_cv:hover{
+	 background: #e5e25a;
+}
+
+
+.registro input[type=file]::-webkit-file-upload-button {
+  visibility: hidden;
 }
