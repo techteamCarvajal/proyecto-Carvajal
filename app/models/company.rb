@@ -4,9 +4,9 @@ class Company < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-   	validates :nombres, presence: true
-	validates :apellidos, presence: true
-  	validates :numero_documento,presence: true
-    validates :tipo_documento,presence: true
-
+    validates :nombre, presence: true
+    validates :rut, presence: true
+  	validates :telefono,presence: true
+    validates :direccion,presence: true
+    validates :nit,presence: true
 end

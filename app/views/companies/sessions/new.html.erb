@@ -1,26 +1,70 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "companies/shared/links" %>
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+<div class="process-wrap fl-wrap session_cont">
+    <ul class="session">
+        <li>
+            <div class="process-item">
+                <h2>Candidatos</h2>
+                <h4>Aún no estás registrado</h4>
+                <h6>Aplica <br>a las mejores ofertas</h6>
+                <div class="btn-containter">
+                    <a href="/users/sign_up"><button class="btn big-btn">Regístrate</button></a>
+                </div>
+            </div>
+            <span class="pr-dec"></span>
+        </li>
+        <li>
+            
+            <div class="container sign-in-container singinsito">
+               <h2 class="title_text">Iniciar sesión</h2>
+                <div class="tabs-container">
+                    <div class="tab">
+                        <div id="tab-1" class="tab-content">
+                            <div class="custom-form">
+                                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                                <div class="field">
+                                    <%= f.label :correo %><br />
+                                    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                                </div>
+                                <div class="field">
+                                    <%= f.label :contraseña %><br />
+                                    <%= f.password_field :password, autocomplete: "off" %>
+                                </div>
+                                <div class="btn-containter boton_inicio">
+                                <button type="submit" class="btn big-btn " >
+                                    <span>Iniciar sesión</span>
+                                </button>
+                                </div>
+                                <div class="clearfix"></div>
+                                <% if devise_mapping.rememberable? -%>
+                                <div class="filter-tags recuerdame">
+                                    <%= f.check_box :remember_me %>
+                                    <label for="check-a">Recuérdame</label>
+                                </div>
+                                <% end %>
+                                <% end %>
+                                <div class="lost_password">
+                                    <%= link_to "Olvide mi contraseña", new_user_password_path %><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="pr-dec"></span>
+        </li>
+        <li>
+            <div class="process-item">
+                <h2>Empresas</h2>
+                <h4>¿Aún no estás registrado?</h4>
+                <h6>Encuentra <br> los mejores profesionales</h6>
+                <div class="btn-containter">
+                    <a href="/companies/sign_up"><button class="btn big-btn ">Regístrate</button></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
