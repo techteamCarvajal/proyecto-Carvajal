@@ -909,6 +909,17 @@ section.color-bg .section-title .breadcrumbs a:before {
 	font-size:30px;
 	font-weight:200;
 }
+
+.registro h2{
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-size:30px;
+	font-weight:200;
+	text-transform: uppercase;
+}
+
+
 .hero-section .intro-item h2 {
 	font-size:54px;
 }
@@ -6654,6 +6665,14 @@ header.main-header {
 	margin-top: 10px;
 	top: -25px;
 }
+
+.hider{
+	visibility: hidden;
+}
+
+.boton_inicio .btn{
+	float: left;
+}
 .lost_password{
 	width: 100%;
 	position: absolute;
@@ -6664,4 +6683,56 @@ header.main-header {
 
 	color: white;
 	text-align: center;
+}
+
+
+.registro .custom-form input{
+	    float: left;
+    border: 1px solid #eee0;
+    background: #96A7B0;
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 0;
+    color: #fff;
+    font-size: 13px;
+
+}
+
+.registro .custom-form .nice-select{
+
+    color: #fff;
+    border-radius: 0;
+    border: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #96A7B0;
+}
+
+.registro .custom-form label{
+	font-size: 18px;
+    color: white;
+    font-weight: 200;
+	text-align: left;
+
+}
+.registro .custom-form .log-submit-btn{
+    padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-appearance: none;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    background: #8A9847;
+}
+.registro .custom-form .log-submit-btn:hover{
+	background: #e5e25a;
+}
+
+.registro{
+	max-width: 800px !important;
 }
