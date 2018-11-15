@@ -1,0 +1,119 @@
+<%= form_with(model: offer, local: true) do |f| %>
+  <% if offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% offer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+              
+      <div class="container sign-in-container">
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form">
+
+                     <div class="row">
+                  <div class="col-md-6">
+                 
+                  <%= f.select :tipo, options_for_select([["Publico", "Publico"],["Privado", "Privado"]]), {:prompt => "Oferta"}, {:class => "chosen-select", required: true} %> 
+                </div>
+
+                    <div class="col-md-6">
+                  <div class="field">
+                    <label>Nombre del cargo</label>
+                    <%= f.text_field :nombre_cargo %>
+                  </div>
+                </div>
+              </div>
+
+                 <div class="row">
+                  <div class="col-md-6">          
+                  <%= f.select :tipo_contrato, options_for_select([["Fijo", "Fijo"],["Prestación de servicios", "Prestación de servicios"],["Indefinido", "Indefinido"],["Temporal", "Temporal"],["Aprendizaje", "Aprendizaje"]]), {:prompt => "Tipo de contrato"}, {:class => "chosen-select", required: true} %> 
+                </div>
+
+                    <div class="col-md-6">
+                  <div class="field">
+                    <label>Salario</label>
+                    <%= f.number_field :salario  %>
+                  </div>
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                  <label>Objetivo</label>
+                  <%= f.text_area :objetivo  %> 
+                </div>
+                </div>
+                <br>
+
+                 <div class="row">
+                  <div class="col-md-12">
+                  <label>Requisitos</label>
+                </div>
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="col-md-12">
+                 <%= f.select :educacion_minima, options_for_select([["Universitario", "Universitario"],["Especialización", "Especialización"],["Bachiller", "Bachiller"],["Ninguna", "Ninguna"],["Maestria", "Maestria"]]), {:prompt => "Educación mínima"}, {:class => "chosen-select", required: true} %> 
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                <div class="field">
+                    <label>Años de experiencia</label>
+                    <%= f.number_field :experiencia  %>
+                  </div>
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                 <%= f.select :idiomas, options_for_select([["Inglés", "Inglés"],["Francés", "Francés"],["Portugues", "Portugues"],["Mandarin", "Mandarin"]]), {:prompt => "Idiomas"}, {:class => "chosen-select", required: true} %>                
+                </div>
+                <div class="col-md-6">
+                 <%= f.select :programas, options_for_select([["Ingenieria", "Ingenieria"], ["Diseño " , "Diseño"]]), {:prompt => "Programas"}, {:class => "chosen-select", required: true} %>
+                </div> 
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                 <%= f.select :conocimientos_especificos, options_for_select([["programación", "programación"],["diseño", "diseño"],["analitica", "analitica"]]), {:prompt => "Conocimientos especificos"}, {:class => "chosen-select", required: true} %>              
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label>Disponibilidad para viajar</label>
+                      <%= f.check_box :disponibilidad_viajar  %>         
+                </div>
+                <div class="col-md-4">
+                 
+                   <label>Disponibilidad para cambiar de residencia</label>
+                      <%= f.check_box :disponibilidad_residencia  %>
+                </div> 
+
+                <div class="col-md-4">
+                 
+                   <label>Cantidad de vacantes</label>
+                      <%= f.number_field :vacantes  %>
+                </div> 
+                </div>
+
+                     <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                  <button type="submit" class="log-submit-btn">
+                    <span>Publicar oferta</span>
+                  </button>
+                </div>
+              </div>
+
+<% end %>

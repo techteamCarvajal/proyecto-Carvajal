@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Offers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Nombre cargo</th>
+      <th>Tipo contrato</th>
+      <th>Salario float</th>
+      <th>Objetivo</th>
+      <th>Educacion minima</th>
+      <th>Experiencia</th>
+      <th>Idiomas</th>
+      <th>Programas</th>
+      <th>Conocimientos especificos</th>
+      <th>Disponibilidad viajar</th>
+      <th>Disponibilidad residencia</th>
+      <th>Vacantes</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offers.each do |offer| %>
+      <tr>
+        <td><%= offer.tipo %></td>
+        <td><%= offer.nombre_cargo %></td>
+        <td><%= offer.tipo_contrato %></td>
+        <td><%= offer.salario_float %></td>
+        <td><%= offer.objetivo %></td>
+        <td><%= offer.educacion_minima %></td>
+        <td><%= offer.experiencia %></td>
+        <td><%= offer.idiomas %></td>
+        <td><%= offer.programas %></td>
+        <td><%= offer.conocimientos_especificos %></td>
+        <td><%= offer.disponibilidad_viajar %></td>
+        <td><%= offer.disponibilidad_residencia %></td>
+        <td><%= offer.vacantes %></td>
+        <td><%= offer.company %></td>
+        <td><%= link_to 'Show', offer %></td>
+        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Offer', new_offer_path %>

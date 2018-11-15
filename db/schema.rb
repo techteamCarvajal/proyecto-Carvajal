@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181113205857) do
+ActiveRecord::Schema.define(version: 20181114201701) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -47,8 +47,30 @@ ActiveRecord::Schema.define(version: 20181113205857) do
     t.string "telefono"
     t.string "direccion"
     t.boolean "terminos"
+    t.float "salario"
     t.index ["email"], name: "index_companies_on_email", unique: true
     t.index ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.string "tipo"
+    t.string "nombre_cargo"
+    t.string "tipo_contrato"
+    t.string "salario_float"
+    t.string "objetivo"
+    t.string "educacion_minima"
+    t.integer "experiencia"
+    t.string "idiomas"
+    t.string "programas"
+    t.string "conocimientos_especificos"
+    t.boolean "disponibilidad_viajar"
+    t.string "disponibilidad_residencia"
+    t.integer "vacantes"
+    t.integer "company_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.float "salario"
+    t.index ["company_id"], name: "index_offers_on_company_id"
   end
 
   create_table "recognitions", force: :cascade do |t|

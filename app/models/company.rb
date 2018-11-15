@@ -9,4 +9,6 @@ class Company < ApplicationRecord
   	validates :telefono,presence: true
     validates :direccion,presence: true
     validates :nit,presence: true
+
+    has_many :offers
 end

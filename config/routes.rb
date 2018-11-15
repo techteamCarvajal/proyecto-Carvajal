@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
   
+  resources :offers
    resources :resumes, only: [:index, :new, :create, :destroy]
 
    	devise_for :companies, controllers: { sessions: 'companies/sessions' , registrations: 'companies/registrations' }

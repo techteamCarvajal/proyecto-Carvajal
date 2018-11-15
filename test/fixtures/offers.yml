@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: MyString
+  nombre_cargo: MyString
+  tipo_contrato: MyString
+  salario_float: MyString
+  objetivo: MyString
+  educacion_minima: MyString
+  experiencia: 1
+  idiomas: MyString
+  programas: MyString
+  conocimientos_especificos: MyString
+  disponibilidad_viajar: false
+  disponibilidad_residencia: MyString
+  vacantes: 1
+  company: one
+
+two:
+  tipo: MyString
+  nombre_cargo: MyString
+  tipo_contrato: MyString
+  salario_float: MyString
+  objetivo: MyString
+  educacion_minima: MyString
+  experiencia: 1
+  idiomas: MyString
+  programas: MyString
+  conocimientos_especificos: MyString
+  disponibilidad_viajar: false
+  disponibilidad_residencia: MyString
+  vacantes: 1
+  company: two
