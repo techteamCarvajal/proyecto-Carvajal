@@ -8,7 +8,7 @@
       <th>Tipo</th>
       <th>Nombre cargo</th>
       <th>Tipo contrato</th>
-      <th>Salario float</th>
+      <th>Salario</th>
       <th>Objetivo</th>
       <th>Educacion minima</th>
       <th>Experiencia</th>
@@ -18,7 +18,7 @@
       <th>Disponibilidad viajar</th>
       <th>Disponibilidad residencia</th>
       <th>Vacantes</th>
-      <th>Company</th>
+      
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -39,7 +39,7 @@
         <td><%= offer.disponibilidad_viajar %></td>
         <td><%= offer.disponibilidad_residencia %></td>
         <td><%= offer.vacantes %></td>
-        <td><%= offer.company %></td>
+       
         <td><%= link_to 'Show', offer %></td>
         <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
         <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>

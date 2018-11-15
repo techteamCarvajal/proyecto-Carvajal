@@ -1,5 +1,6 @@
 class OffersController < ApplicationController
-  before_action :set_offer, only: [:show, :edit, :update, :destroy]
+   before_action :set_offer, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_company!, except: [:index]
 
   # GET /offers
   # GET /offers.json
@@ -24,7 +25,13 @@ class OffersController < ApplicationController
   # POST /offers
   # POST /offers.json
   def create
+
+   
+
     @offer = Offer.new(offer_params)
+    @offer.company_id = current_company.id
+
+
 
     respond_to do |format|
       if @offer.save
@@ -69,6 +76,8 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:tipo, :nombre_cargo, :tipo_contrato, :salario_float, :objetivo, :educacion_minima, :experiencia, :idiomas, :programas, :conocimientos_especificos, :disponibilidad_viajar, :disponibilidad_residencia, :vacantes, :company_id)
+      params.require(:offer).permit(:tipo, :nombre_cargo, :tipo_contrato, :salario_float, 
+        :objetivo, :educacion_minima, :experiencia, :idiomas, :programas, :conocimientos_especificos, 
+        :disponibilidad_viajar, :disponibilidad_residencia, :vacantes, :company_id)
     end
 end

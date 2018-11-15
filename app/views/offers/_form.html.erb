@@ -11,8 +11,7 @@
     </div>
   <% end %>
 
-              
-      <div class="container sign-in-container">
+  <div class="container sign-in-container">
     <div class="tabs-container">
       <div class="tab">
         <div id="tab-1" class="tab-content">
@@ -30,9 +29,10 @@
                     <%= f.text_field :nombre_cargo %>
                   </div>
                 </div>
+                
               </div>
 
-                 <div class="row">
+              <div class="row">
                   <div class="col-md-6">          
                   <%= f.select :tipo_contrato, options_for_select([["Fijo", "Fijo"],["Prestación de servicios", "Prestación de servicios"],["Indefinido", "Indefinido"],["Temporal", "Temporal"],["Aprendizaje", "Aprendizaje"]]), {:prompt => "Tipo de contrato"}, {:class => "chosen-select", required: true} %> 
                 </div>
@@ -108,12 +108,15 @@
                 </div> 
                 </div>
 
-                     <div class="row">
+
+                <div class="row">
                 <div class="col-md-8 col-md-offset-4">
                   <button type="submit" class="log-submit-btn">
-                    <span>Publicar oferta</span>
+                    <span>Crear contenido</span>
                   </button>
                 </div>
               </div>
 
-<% end %>
+
+
+              <% end %>
