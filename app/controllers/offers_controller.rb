@@ -26,7 +26,7 @@ class OffersController < ApplicationController
   # POST /offers.json
   def create
 
-   
+
 
     @offer = Offer.new(offer_params)
     @offer.company_id = current_company.id
@@ -78,6 +78,6 @@ class OffersController < ApplicationController
     def offer_params
       params.require(:offer).permit(:tipo, :nombre_cargo, :tipo_contrato, :salario_float, 
         :objetivo, :educacion_minima, :experiencia, :idiomas, :programas, :conocimientos_especificos, 
-        :disponibilidad_viajar, :disponibilidad_residencia, :vacantes, :company_id)
+        :disponibilidad_viajar, :disponibilidad_residencia, :vacantes, :salario, :company_id)
     end
 end

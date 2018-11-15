@@ -32,7 +32,7 @@
                 
               </div>
 
-              <div class="row">
+             <div class="row">
                   <div class="col-md-6">          
                   <%= f.select :tipo_contrato, options_for_select([["Fijo", "Fijo"],["Prestación de servicios", "Prestación de servicios"],["Indefinido", "Indefinido"],["Temporal", "Temporal"],["Aprendizaje", "Aprendizaje"]]), {:prompt => "Tipo de contrato"}, {:class => "chosen-select", required: true} %> 
                 </div>
@@ -40,7 +40,7 @@
                     <div class="col-md-6">
                   <div class="field">
                     <label>Salario</label>
-                    <%= f.number_field :salario  %>
+                    <%= f.number_field :salario_float  %>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                 </div>
                 </div>
 
-                <div class="row">
+                  <div class="row">
                   <div class="col-md-6">
                  <%= f.select :idiomas, options_for_select([["Inglés", "Inglés"],["Francés", "Francés"],["Portugues", "Portugues"],["Mandarin", "Mandarin"]]), {:prompt => "Idiomas"}, {:class => "chosen-select", required: true} %>                
                 </div>
@@ -107,6 +107,8 @@
                       <%= f.number_field :vacantes  %>
                 </div> 
                 </div>
+
+
 
 
                 <div class="row">
