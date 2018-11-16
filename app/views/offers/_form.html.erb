@@ -11,15 +11,17 @@
     </div>
   <% end %>
 
-  <div class="container sign-in-container">
+  <div class="container registro sign-in-container">
+    <h2>Crear contrato</h2>
     <div class="tabs-container">
       <div class="tab">
         <div id="tab-1" class="tab-content">
+          
           <div class="custom-form">
 
                      <div class="row">
                   <div class="col-md-6">
-                 
+                 <label>Oferta</label>
                   <%= f.select :tipo, options_for_select([["Publico", "Publico"],["Privado", "Privado"]]), {:prompt => "Oferta"}, {:class => "chosen-select", required: true} %> 
                 </div>
 
@@ -33,7 +35,8 @@
               </div>
 
              <div class="row">
-                  <div class="col-md-6">          
+                  <div class="col-md-6">       
+                  <label>Contrato</label>   
                   <%= f.select :tipo_contrato, options_for_select([["Fijo", "Fijo"],["Prestación de servicios", "Prestación de servicios"],["Indefinido", "Indefinido"],["Temporal", "Temporal"],["Aprendizaje", "Aprendizaje"]]), {:prompt => "Tipo de contrato"}, {:class => "chosen-select", required: true} %> 
                 </div>
 
@@ -67,12 +70,19 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-6">
                 <div class="field">
                     <label>Años de experiencia</label>
                     <%= f.number_field :experiencia  %>
                   </div>
                 </div>
+
+
+                <div class="col-md-6">
+                 
+                   <label>Cantidad de vacantes</label>
+                      <%= f.number_field :vacantes  %>
+                </div> 
                 </div>
 
                   <div class="row">
@@ -90,22 +100,18 @@
                 </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-4">
+                <div class="row checkboxes">
+                  <div class="col-md-6">
+                    <%= f.check_box :disponibilidad_viajar  %>         
+
                     <label>Disponibilidad para viajar</label>
-                      <%= f.check_box :disponibilidad_viajar  %>         
                 </div>
-                <div class="col-md-4">
-                 
+                <div class="col-md-6">
+                 <%= f.check_box :disponibilidad_residencia  %>
                    <label>Disponibilidad para cambiar de residencia</label>
-                      <%= f.check_box :disponibilidad_residencia  %>
+                      
                 </div> 
 
-                <div class="col-md-4">
-                 
-                   <label>Cantidad de vacantes</label>
-                      <%= f.number_field :vacantes  %>
-                </div> 
                 </div>
 
 

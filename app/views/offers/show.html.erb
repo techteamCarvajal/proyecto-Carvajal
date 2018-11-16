@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
-
+<!--<p id="notice"><%= notice %></p>-->
+<div class="oferta">
 <p>
-  <strong>Tipo:</strong>
   <%= @offer.tipo %>
 </p>
 
 <p>
-  <strong>Nombre cargo:</strong>
   <%= @offer.nombre_cargo %>
 </p>
 
@@ -16,7 +14,7 @@
 </p>
 
 <p>
-  <strong>Salario float:</strong>
+  <strong>Salario :</strong>
   <%= @offer.salario_float %>
 </p>
 
@@ -68,3 +66,5 @@
 
 <%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>
+
+</div>

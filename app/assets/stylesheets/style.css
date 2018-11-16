@@ -918,6 +918,7 @@ section.color-bg .section-title .breadcrumbs a:before {
 	font-size:30px;
 	font-weight:200;
 	text-transform: uppercase;
+	margin-top: 20px
 }
 
 
@@ -6697,7 +6698,7 @@ header.main-header {
 }
 
 
-.registro .custom-form input{
+.registro .custom-form input,  .registro .custom-form textarea{
 	    float: left;
     border: 1px solid #eee0;
     background: #96A7B0;
@@ -6708,6 +6709,17 @@ header.main-header {
     font-size: 13px;
 
 }
+
+ .registro .custom-form textarea{
+ 	height: 75px;
+ }
+
+  .registro .custom-form input[type=checkbox]{
+
+  	width: 10%;
+    position: relative;
+    margin-top: 5px;;
+  }
 
 .registro .custom-form .nice-select{
 
@@ -6778,7 +6790,40 @@ header.main-header {
 	 background: #e5e25a;
 }
 
+.custom-form  .checkboxes label{
+	width: 85%;
+	height: 50px
+}
+
 
 .registro input[type=file]::-webkit-file-upload-button {
   visibility: hidden;
 }
+
+.oferta{
+	padding: 20px;
+}
+
+.oferta p{
+	color: #fff;
+	font-size: 24px;
+	text-align: left;
+	font-weight: 200,
+}
+
+.oferta strong{
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
