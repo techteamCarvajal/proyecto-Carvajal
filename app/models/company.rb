@@ -9,6 +9,9 @@ class Company < ApplicationRecord
   	validates :telefono,presence: true
     validates :direccion,presence: true
     validates :nit,presence: true
+    validates :sector,presence: true
+    validates :nombre_representante,presence: true
+    
     has_many :offers, dependent: :destroy
     mount_uploader :rut, AttachmentUploader
     
