@@ -57,8 +57,14 @@
         <%= render 'shared/navbar' unless @disable_nav %>
         <%= render 'shared/message' %>
         <div id="wrapper">
+
             <div class="content">
+                <div id="jijs" class="imagen_abajo">
+                        <%= image_tag("1x/logo.png") %>
+                        </div>
                 <%= yield %>
+
+
             </div>
         </div>
         <footer>
@@ -66,5 +72,8 @@
         <a class="to-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
     </div>
 </body>
+<script>
+toastr.success("hola guayabera", "un titulo bien chevere", {"iconClass": 'customer-info'});
 
+</script>
 </html>

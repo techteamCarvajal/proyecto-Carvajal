@@ -6857,3 +6857,40 @@ input.invalid {
     color: #e5e25a;
 }
 
+.imagen_abajo{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.imagen_abajo img{
+	height: 100%;
+}
+
+.toast-success {
+    background-color: #00A391;
+}
+
+#toast-container > div {
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 0;
+    -moz-box-shadow: 0 0 12px #999999;
+    /* -webkit-box-shadow: 0 0 12px #999999; */
+    -o-box-shadow: 0 0 12px #999999;
+    /* box-shadow: 0 0 12px #999999; */
+    color: red;
+    /* margin: 0 0 6px; */
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+     opacity: 1; 
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+}
+
+

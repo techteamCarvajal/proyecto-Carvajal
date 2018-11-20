@@ -6,7 +6,7 @@
                 <%= image_tag("werk-logo.png") %>
             <% end %>
         </div> 
-     <!--   <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a> -->
+       <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a> 
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
@@ -87,12 +87,13 @@
 <script type="text/javascript">
     function clickButton(){
         swal({
-            position: 'top-end',
-            type: 'success',
-            title: 'Atención',
-            text: 'Las autoridades ya han sido notificadas y están en camino',
-            showConfirmButton: true,
-            showCancelButton: true
-        })
+            title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}
     }
 </script>
