@@ -57,8 +57,14 @@
         <%= render 'shared/navbar' unless @disable_nav %>
         <%= render 'shared/message' %>
         <div id="wrapper">
+
             <div class="content">
+                <div class="imagen_abajo">
+                        <%= image_tag("1x/logo.png") %>
+                        </div>
                 <%= yield %>
+
+
             </div>
         </div>
         <footer>
