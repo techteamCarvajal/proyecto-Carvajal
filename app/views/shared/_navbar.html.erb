@@ -39,10 +39,6 @@
                             <!--second level end-->                                
                         </li>
                     <% else %>
-                        
-                      
-                           
-                           
 
                            <li><%= link_to "Nosotros", "/nosotros" %></li>
                           
@@ -62,9 +58,13 @@
                             </ul>
                         </li>
                             
-                           
-                             <li><%= link_to "Pruebas", "/test" %></li>
-                              <li><%= link_to "Terminos", "/terminos_condiciones" %></li>
+                           <li>            
+                            <%= link_to new_contact_path do %>
+                                Contacto
+                            <% end %>
+                        </li>
+                             
+
 
                         <li>            
                             <%= link_to new_user_session_path do %>
