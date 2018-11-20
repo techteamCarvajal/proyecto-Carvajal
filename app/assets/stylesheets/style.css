@@ -6851,5 +6851,9 @@ input.invalid {
 
 
 
-
+.registro a {
+    text-decoration: none;
+    position: relative;
+    color: #e5e25a;
+}
 
