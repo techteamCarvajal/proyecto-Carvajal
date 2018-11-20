@@ -1,82 +1,95 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.0/sweetalert2.all.min.js"></script>
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
-       <div class="logo-holder">
+        <div class="logo-holder">
             <%= link_to root_path do %>
-                <%= image_tag("werk-logo.png") %>
+            <%= image_tag("werk-logo.png") %>
             <% end %>
-        </div> 
-       <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a> 
+        </div>
+        <a class="add-list" onclick="clickButton()">Buscar empleo<span></span></a>
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
                     <% if user_signed_in? %>
-                        <li>
-                            <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
-                            <ul>
-                               
-                                <li><%= link_to "Perfil", edit_user_registration_path %></li>
-                                <li><%= link_to "Procesos", edit_user_registration_path %></li>          
-                                <li><%= link_to "Concientizate", "/education" %></li>
-                                <li><%= link_to "Mi diario", "/diary" %></li>
-                                 <li><%= link_to "Carpeta Laboral", "/profile" %></li>
-                                  <li><%= link_to "Blog", "/blogs" %></li>  
-                                  
-                                <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="act-link">Notificaciones personalizadas (<%=@notifications.size%>) <i class="fa fa-caret-down"></i></a>
-                            <!--second level -->   
-                            <ul>
-                                <% if @notifications.size == 0 %>
-                                    <li><a>No hay notificaciones para ti</a></li>
-                                <% end %>
-                                <% @notifications.each do |notification| %>
-                                    <li><a><%= notification["text"] %></a></li>
-                                <% end %>
-                            </ul>
-                            <!--second level end-->                                
-                        </li>
+                    <li>
+                        <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
+                        <ul>
+                            <li>
+                                <%= link_to "Perfil", edit_user_registration_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Procesos", edit_user_registration_path %>
+                            </li>
+                            <li>
+                                <%= link_to "Concientizate", "/education" %>
+                            </li>
+                            <li>
+                                <%= link_to "Mi diario", "/diary" %>
+                            </li>
+                            <li>
+                                <%= link_to "Carpeta Laboral", "/profile" %>
+                            </li>
+                            <li>
+                                <%= link_to "Blog", "/blogs" %>
+                            </li>
+                            <li>
+                                <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="act-link">Notificaciones personalizadas (<%=@notifications.size%>) <i class="fa fa-caret-down"></i></a>
+                        <!--second level -->
+                        <ul>
+                            <% if @notifications.size == 0 %>
+                            <li><a>No hay notificaciones para ti</a></li>
+                            <% end %>
+                            <% @notifications.each do |notification| %>
+                            <li><a><%= notification["text"] %></a></li>
+                            <% end %>
+                        </ul>
+                        <!--second level end-->
+                    </li>
                     <% else %>
-
-                           <li><%= link_to "Nosotros", "/nosotros" %></li>
-                          
-                           <li>
-                            <a>Cómo funciona</a>
-                            <ul>
-                                 <li><%= link_to "Empresa", "/works" %></li>
-                                   <li><%= link_to "Candidato", "/works_candidato" %></li>
-                            </ul>
-                        </li>
-
-                         <li>
-                            <a>FAQ</a>
-                            <ul>
-                                 <li><%= link_to "Empresa", "/faq" %></li>
-                                   <li><%= link_to "Candidato", "/faq_candidato" %></li>
-                            </ul>
-                        </li>
-                            
-                           <li>            
-                            <%= link_to new_contact_path do %>
-                                Contacto
-                            <% end %>
-                        </li>
-                             
-
-
-                        <li>            
-                            <%= link_to new_user_session_path do %>
-                                Iniciar sesión
-                            <% end %>
-                        </li>
-
+                    <li>
+                        <%= link_to "Nosotros", "/nosotros" %>
+                    </li>
+                    <li>
+                        <a>Cómo funciona</a>
+                        <ul>
+                            <li>
+                                <%= link_to "Empresa", "/works" %>
+                            </li>
+                            <li>
+                                <%= link_to "Candidato", "/works_candidato" %>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>FAQ</a>
+                        <ul>
+                            <li>
+                                <%= link_to "Empresa", "/faq" %>
+                            </li>
+                            <li>
+                                <%= link_to "Candidato", "/faq_candidato" %>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <%= link_to new_contact_path do %>
+                        Contacto
+                        <% end %>
+                    </li>
+                    <li>
+                        <%= link_to new_user_session_path do %>
+                        Iniciar sesión
+                        <% end %>
+                    </li>
                     <% end %>
                 </ul>
             </nav>
         </div>
-
         <div class="nav-button-wrap color-bg">
             <div class="nav-button">
                 <span></span><span></span><span></span>
@@ -85,12 +98,17 @@
     </div>
 </header>
 <script type="text/javascript">
-    function clickButton(){
-        swal({
-  title: 'Error!',
-  text: 'Do you want to continue',
-  type: 'error',
-  confirmButtonText: 'Cool'
-})
-    }
+function clickButton() {
+    swal({
+        title: 'Pronto nos pondremos en contacto contigo',
+        text: "javi se la traga",
+        type: 'warning',
+        showCancelButton: true,
+        showConfirmButton: false,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'holi'
+    })
+}
 </script>
