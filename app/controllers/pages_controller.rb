@@ -33,4 +33,8 @@ class PagesController < ApplicationController
 	def test
 	end
 
+	def terminos_condiciones
+		
+	end
+
 end
