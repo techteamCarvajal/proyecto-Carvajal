@@ -6894,3 +6894,24 @@ input.invalid {
 }
 
 
+.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background: #f2f0a5;
+    color: black;
+}
+
+.swal2-popup .swal2-title {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #000000 !important;
+    font-size: 3em !important;
+    font-weight: 200 !important;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
