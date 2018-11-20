@@ -13,6 +13,7 @@ class Company < ApplicationRecord
     validates :nombre_representante,presence: true
     
     has_many :offers, dependent: :destroy
+    
     mount_uploader :rut, AttachmentUploader
     
 end

@@ -7,8 +7,11 @@ end
 
 
 # Gema para subir archivos
+gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
-
+gem 'fog'
+# Gema para utilizar correo de contacto
+gem 'mail_form'
 # Gema para administrador
 gem 'rails_admin', '~> 1.3'
 # Api para la autenticación
