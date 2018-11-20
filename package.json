@@ -1,5 +1,7 @@
 {
   "name": "HackathonSabana",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "sweetalert2": "^7.29.1"
+  }
 }

@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.0/sweetalert2.all.min.js"></script>
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
        <div class="logo-holder">
@@ -87,13 +87,10 @@
 <script type="text/javascript">
     function clickButton(){
         swal({
-            title: 'Are you sure?',
-  text: "You won't be able to revert this!",
-  type: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#3085d6',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!'
-}
+  title: 'Error!',
+  text: 'Do you want to continue',
+  type: 'error',
+  confirmButtonText: 'Cool'
+})
     }
 </script>
