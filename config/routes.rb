@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 	get "/education" => "pages#education", as: "education"
 	get "/test" => "pages#test", as: "test"
 	get "/terminos_condiciones" => "pages#terminos_condiciones", as: "terminos_condiciones"
+	get "/politicas" => "pages#politicas", as: "politicas"
 	get "/nosotros" => "pages#us", as: "nosotros"
 	get "/works" => "pages#works", as: "como_funciona_empresa"
 	get "/works_candidato" => "pages#works_candidato", as: "como_funciona_candidato"

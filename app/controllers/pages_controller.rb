@@ -37,4 +37,8 @@ class PagesController < ApplicationController
 		
 	end
 
+	def politicas
+		
+	end
+
 end
