@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 
+#gema de sweet alert 2
+
+
 # Gema para subir archivos
 gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
