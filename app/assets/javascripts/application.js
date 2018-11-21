@@ -11,9 +11,13 @@
 // about supported directives.
 //
 //= require jquery3
+//= require jquery_ujs
 //= require rails-ujs
 //= require toastr
-//= require_tree .
+//= require_tree . 
+//= require sweetalert2
+
+
 
     toastr.options = {
   "debug": false,
@@ -24,3 +28,56 @@
   "timeOut": 1000,
   "extendedTimeOut": 300
 }
+
+function mostrar() {
+    swal({
+        title: 'estas seguro?',
+        text: "¿deseas continuar?",
+        type: 'warning',
+        showCancelButton: true,
+        showConfirmButton: false,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#7D8',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'ok'
+    })
+}
+
+$.rails.allowAction = function(link){
+  if (link.data("confirm") == undefined){
+    return true;
+  }
+  $.rails.showConfirmationDialog(link);
+  return false;
+}
+
+//User click confirm button
+$.rails.confirmed = function(link){
+  link.data("confirm", null);
+
+     $.post({
+       type: link.data('method'),
+        url: link.attr('href')
+    }).done(function (data) {
+         location.href= ("/");
+    });
+
+}
+
+//Display the confirmation dialog
+$.rails.showConfirmationDialog = function(link){
+  var message = link.data("confirm");
+  swal({
+    title: message,
+    type: 'warning',
+    confirmButtonText: 'Sí',
+    confirmButtonColor: '#85FD7F',
+    cancelButtonText: 'No',
+    showCancelButton: true
+  }).then(function(e){
+  	if(e.value){
+    $.rails.confirmed(link);
+	}
+  });
+};
+
