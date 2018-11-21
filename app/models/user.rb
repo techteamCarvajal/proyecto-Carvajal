@@ -18,6 +18,7 @@ class User < ApplicationRecord
       has_many :texts, dependent: :destroy
       has_many :recordings, dependent: :destroy
       has_many :recognitions, dependent: :destroy
+
       mount_uploader :cv, AttachmentUploader # Tells rails to use this uploader for this model.
     
 end
