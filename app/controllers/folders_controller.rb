@@ -1,4 +1,5 @@
 class FoldersController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
 
   # GET /folders
@@ -25,11 +26,11 @@ class FoldersController < ApplicationController
   # POST /folders.json
   def create
     @folder = Folder.new(folder_params)
-    @blog.user_id = current_user.id
+    @folder.user_id = current_user.id
 
     respond_to do |format|
       if @folder.save
-        format.html { redirect_to @folder, notice: 'Folder was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Etapa 1 creada exitosamente.' }
         format.json { render :show, status: :created, location: @folder }
       else
         format.html { render :new }
