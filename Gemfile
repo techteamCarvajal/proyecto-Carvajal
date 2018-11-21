@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+<<<<<<< HEAD
 
 # gema multistep
 
@@ -13,6 +14,9 @@ gem 'wicked'
 #gema de sweet alert 2
 gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
 gem 'sweet-alert2-rails'
+=======
+gem 'rails-assets-sweetalert2', source: 'https://rails-assets.org'
+>>>>>>> eece257fdd4fc84587f9b20b07f38591b21e550c
 
 # Gema para subir archivos
 gem 'mini_magick'
