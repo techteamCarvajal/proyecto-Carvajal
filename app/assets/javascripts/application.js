@@ -24,3 +24,17 @@
   "timeOut": 1000,
   "extendedTimeOut": 300
 }
+
+function mostrar() {
+    swal({
+        title: 'Todos en la escuela saben que',
+        text: "javi se la traga",
+        type: 'warning',
+        showCancelButton: true,
+        showConfirmButton: false,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'holi'
+    })
+}
