@@ -38,15 +38,29 @@
 ++ Responsive ++
 /*-------------General Style---------------------------------------*/
 
+ 
+ /*
+ *= require_self
+ *= require sweetalert2
+ *= require toastr 
+ *= require toastr
+ *= require color
+ *= require plugins
+ *= require reset
+ *= require style
+ *= require font-awesome
+ *= require_tree .
+ */
+
 @font-face {
     font-family: nexaFont;
-    src: url('app/assets/Nexa Light.otf');
+    src: font-url('nexaL.otf') format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: nexaFont;
-    src: url('Nexa Bold.otf');
+    src: font-url('nexaB.otf') format("truetype");
     font-weight: bold;
 }
 
@@ -5257,7 +5271,7 @@ footer.main-footer.fixed-footer {
 	margin-top: 0;
 }
 .session li{
-	width:30.3%;
+	width:29.8%;
 	margin: 20px;
 	height: 400px;
 	background-color: #7F949F;
