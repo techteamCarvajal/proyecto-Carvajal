@@ -21,13 +21,7 @@
                                 <%= link_to "Procesos", edit_user_registration_path %>
                             </li>
                             <li>
-                                <%= link_to "Concientizate", "/education" %>
-                            </li>
-                            <li>
-                                <%= link_to "Mi diario", "/diary" %>
-                            </li>
-                            <li>
-                                <%= link_to "Carpeta Laboral", "/profile" %>
+                                <%= link_to "Carpeta Laboral", new_folder_path %>
                             </li>
                             <li>
                                 <%= link_to "Blog", "/blogs" %>
@@ -101,7 +95,7 @@
 function clickButton() {
     swal({
         title: 'Todos en la escuela saben que',
-        text: "javi se la traga",
+        text: "javi es el más aspero",
         type: 'warning',
         showCancelButton: true,
         showConfirmButton: false,

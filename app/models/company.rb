@@ -11,9 +11,7 @@ class Company < ApplicationRecord
     validates :nit,presence: true
     validates :sector,presence: true
     validates :nombre_representante,presence: true
-    
     has_many :offers, dependent: :destroy
-    
     mount_uploader :rut, AttachmentUploader
     
 end

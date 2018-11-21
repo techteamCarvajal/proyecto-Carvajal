@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181119152144) do
+ActiveRecord::Schema.define(version: 20181121204546) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -61,11 +61,29 @@ ActiveRecord::Schema.define(version: 20181119152144) do
     t.string "certificado_formacion"
     t.string "certificado_cuenta_bancaria"
     t.string "fondo_pension"
-    t.string "afiliacion_cesantias"
+    t.string "cesantias"
+    t.string "certificado_eps"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "status"
     t.integer "user_id"
     t.index ["user_id"], name: "index_documents_on_user_id"
+  end
+
+  create_table "folders", force: :cascade do |t|
+    t.string "soporte_estudios"
+    t.string "referencia_laboral"
+    t.string "fotocopia_cedula"
+    t.string "certificado_formacion"
+    t.string "certificado_cuenta_bancaria"
+    t.string "fondo_pension"
+    t.string "cesantias"
+    t.string "certificado_eps"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "status"
+    t.index ["user_id"], name: "index_folders_on_user_id"
   end
 
   create_table "offers", force: :cascade do |t|

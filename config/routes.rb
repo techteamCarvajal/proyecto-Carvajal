@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
+
+  	resources :folders
    	devise_for :companies, controllers: { sessions: 'companies/sessions' , registrations: 'companies/registrations' } 
 	devise_for :administrators 
 	devise_for :users
 	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-	
+
   	resources :offers
-  	resources :documents
+  	resources :after_signup
   	resources :blogs
   	resources :notifications, only: [:index]
   	resources :contacts, only: [:new, :create]
+ 	resources :documents
+
+  	
 
 	# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 	get "/recognition" => "recognitions#home", as: "recognition"
@@ -36,5 +41,7 @@ Rails.application.routes.draw do
 
 
 	root to: "pages#home"
+
+	
 
 end

@@ -1,11 +1,11 @@
 class Document < ApplicationRecord
-
-	mount_uploader :soporte_estudios, AttachmentUploader 
-	mount_uploader :referencia_laboral, AttachmentUploader 
-	mount_uploader :fotocopia_cedula, AttachmentUploader 
-	mount_uploader :certificado_formacion, AttachmentUploader 
-	mount_uploader :certificado_cuenta_bancaria, AttachmentUploader 
-	mount_uploader :fondo_pension, AttachmentUploader 
-	mount_uploader :afiliacion_cesantias, AttachmentUploader 
-	
+		 belongs_to :user, optional: :true  
+		 validates :soporte_estudios,   :presence => true
+		 validates :referencia_laboral, :presence => true
+		 validates :fotocopia_cedula,   :presence => true
+		 validates :certificado_formacion, :presence => true
+		 validates :certificado_cuenta_bancaria, :presence => true
+		 validates :fondo_pension,     :presence => true
+		 validates :cesantias,         :presence => true
+		 validates :certificado_eps, :presence => true		 
 end

@@ -13,6 +13,8 @@ class User < ApplicationRecord
       validates :tipo_documento,presence: true
 
       has_many :blogs, dependent: :destroy
+      has_many :documents, dependent: :destroy
+      has_many :folders, dependent: :destroy
       has_many :texts, dependent: :destroy
       has_many :recordings, dependent: :destroy
       has_many :recognitions, dependent: :destroy

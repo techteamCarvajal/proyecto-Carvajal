@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  soporte_estudios: MyString
+  referencia_laboral: MyString
+  fotocopia_cedula: MyString
+  certificado_formacion: MyString
+  certificado_cuenta_bancaria: MyString
+  fondo_pension: MyString
+  cesantias: MyString
+  certificado_eps: MyString
+  user: one
+
+two:
+  soporte_estudios: MyString
+  referencia_laboral: MyString
+  fotocopia_cedula: MyString
+  certificado_formacion: MyString
+  certificado_cuenta_bancaria: MyString
+  fondo_pension: MyString
+  cesantias: MyString
+  certificado_eps: MyString
+  user: two
