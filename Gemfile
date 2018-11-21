@@ -5,9 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
-#gema de sweet alert 2
-
+gem 'rails-assets-sweetalert2', source: 'https://rails-assets.org'
 
 # Gema para subir archivos
 gem 'mini_magick'
