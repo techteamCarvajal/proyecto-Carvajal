@@ -97,20 +97,24 @@
               </div>
    
 
-              <div class="row">
-               
-           <div class="col-md-4">
-                   <label>Departamento</label>
-                  <%= f.select :departamento, options_for_select([["Amazonas", "Amazonas"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
-                </div>
-                
+                <div class="row">
 
+                
+               
+                <div class="col-md-4">
+                  <label>Departamento</label>
+                    <%= f.select :deparment_id, Department.all.collect{ |u| [ u.name, u.id] }, :selected => params[:department_id] %>                 
+                </div>
 
                  <div class="col-md-4">
-                   <label>Ciudad</label>
-                   <%= f.select :ciudad, options_for_select([["Cedula", "Cedula"], ["Tarjeta de identidad", "Tarjeta de identidad"],["Pasaporte", "Pasaporte"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %>  
-                </div>
+                  <label>Ciudad</label>
+                  <%= f.select :city_id, City.all.collect{ |u| [ u.name, u.id] }, :selected => params[:city_id] %>
+                  </div>
 
+                
+                  </div>
+
+               
 
                 <div class="col-md-4">
                   <div class="field">
