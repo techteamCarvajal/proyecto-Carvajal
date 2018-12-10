@@ -4,16 +4,12 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+# gema para anuncios sweetAlert
 gem 'rails-assets-sweetalert2', source: 'https://rails-assets.org'
-
-
-
+# gema para ciudades y paises
+gem 'city-state'
 # gema multistep
-
 gem 'wicked'
-
-
 # Gema para subir archivos
 gem 'mini_magick'
 gem 'carrierwave', '~> 1.0'
