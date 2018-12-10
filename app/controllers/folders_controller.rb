@@ -2,40 +2,51 @@ class FoldersController < ApplicationController
   before_action :authenticate_user!
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
 
-  # GET /folders
-  # GET /folders.json
   def index
     @folders = Folder.all
   end
-
+ 
+  # muestra los documentos de cada candidato
   # GET /folders/1
   # GET /folders/1.json
   def show
+    folder = Folder.find(params[:id])
+   if current_user == folder.user # si mi usuario es el mismo del anuncio valida que no haga una reserva propia
+    else
+       flash[:alert] = "No puedes ver la carpeta laboral de otras personas"
+       redirect_to  root_path
+     end
   end
 
+
+  # genera la etapa 1 de la carpeta laboral
   # GET /folders/new
   def new
-    @folder = Folder.new
+    if current_user.folders.count == 0
+      @folder = current_user.folders.build
+    else
+      flash[:alert] =  "Sólo puedes crear la etapa 1 una vez."
+      redirect_to root_path
+    end
   end
 
-  # GET /folders/1/edit
-  def edit
-  end
-
+ 
   # POST /folders
   # POST /folders.json
   def create
+    if Folder.count > 0
+      @folder.order = Folder.maximum(:order) + 1
+    else 
+      @folder.order = 1
+    end
     @folder = Folder.new(folder_params)
-    @folder.user_id = current_user.id
-
-    respond_to do |format|
+    @folder.user_id = current_user.id  
       if @folder.save
-        format.html { redirect_to root_path, notice: 'Etapa 1 creada exitosamente.' }
-        format.json { render :show, status: :created, location: @folder }
+        flash[:notice] = "Etapa 1 creada exitosamente."
+        redirect_to root_path
       else
-        format.html { render :new }
-        format.json { render json: @folder.errors, status: :unprocessable_entity }
-      end
+       flash[:notice] = "La etapa 1 no pudo ser creada"
+       redirect_to root_path    
     end
   end
 

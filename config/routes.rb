@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    resources :folders
+    resources :folders, except: [:edit]
    	devise_for :companies, controllers: { sessions: 'companies/sessions' , registrations: 'companies/registrations' } 
 	devise_for :administrators 
 	devise_for :users

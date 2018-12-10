@@ -1,43 +1,32 @@
-<p id="notice"><%= notice %></p>
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+                      <div class="dashboard-list-box fl-wrap">
+                    <div class="reviews-comments-wrap">
+                        <% if @folders.size == 0 %>
+                            <p>No se han creado candidatos con documentos</p>
+                        <% end %>
+                         <% @folders.each do |folder| %>
+                           
+                            <div class="reviews-comments-item">
+                                <div class="reviews-comments-item-text">
+                                  <div class="post-author"><%= image_tag("1.jpg") %> <span>Autor:  <%= folder.user.nombres %>  <%= folder.user.apellidos%></span></a></div>
+                                    <div class="clearfix"></div>
+                                    <p>Soporte de estudios: <%= link_to "Descargar soporte de estudios", folder.soporte_estudios_url %></p>
+                                    <p>Soporte de estudios: <%= link_to "Descargar referencia laboral", folder.referencia_laboral_url %></p>
+                                    <p>Soporte de estudios: <%= link_to "Descargar fotocopia de cedula", folder.fotocopia_cedula_url %></p>
+                                    <p>Soporte de estudios: <%= link_to "Descargar certificado de formación", folder.certificado_formacion_url %></p>
+              
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= folder.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                      <td><%= link_to 'Show', folder %></td>
+                                </div>
+                            </div>
+                                          
+                    
+                        <% end %>
+                    </div>
+                </div>
 
-<h1>Folders</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Soporte estudios</th>
-      <th>Referencia laboral</th>
-      <th>Fotocopia cedula</th>
-      <th>Certificado formacion</th>
-      <th>Certificado cuenta bancaria</th>
-      <th>Fondo pension</th>
-      <th>Cesantias</th>
-      <th>Certificado eps</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @folders.each do |folder| %>
-      <tr>
-        <td><%= folder.soporte_estudios %></td>
-        <td><%= folder.referencia_laboral %></td>
-        <td><%= folder.fotocopia_cedula %></td>
-        <td><%= folder.certificado_formacion %></td>
-        <td><%= folder.certificado_cuenta_bancaria %></td>
-        <td><%= folder.fondo_pension %></td>
-        <td><%= folder.cesantias %></td>
-        <td><%= folder.certificado_eps %></td>
-        <td><%= folder.user %></td>
-        <td><%= link_to 'Show', folder %></td>
-        <td><%= link_to 'Edit', edit_folder_path(folder) %></td>
-        <td><%= link_to 'Destroy', folder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Folder', new_folder_path %>
+     

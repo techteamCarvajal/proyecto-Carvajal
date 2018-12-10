@@ -1,49 +1,18 @@
-<p id="notice"><%= notice %></p>
+                        <div class="reviews-comments-item">
+                                <div class="reviews-comments-item-text">
+                                  <div class="post-author"> <span>Candidato: <%= image_tag("1.jpg") %> <%= @folder.user.nombres %>  <%= @folder.user.apellidos%></span></a></div>
+                                    <div class="clearfix"></div>
+                                    <p>Soporte de estudios: <%= link_to "Descargar soporte de estudios", @folder.soporte_estudios_url %></p>
+                                    <p>Referencia laboral: <%= link_to "Descargar referencia laboral", @folder.referencia_laboral_url %></p>
+                                    <p>Fotocopia de cedula: <%= link_to "Descargar fotocopia de cedula", @folder.fotocopia_cedula_url %></p>
+                                    <p>Certificado de formación: <%= link_to "Descargar certificado de formación", @folder.certificado_formacion_url %></p> 
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= @folder.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
 
-<p>
-  <strong>Soporte estudios:</strong>
-  <%= @folder.soporte_estudios %>
-</p>
 
-<p>
-  <strong>Referencia laboral:</strong>
-  <%= @folder.referencia_laboral %>
-</p>
 
-<p>
-  <strong>Fotocopia cedula:</strong>
-  <%= @folder.fotocopia_cedula %>
-</p>
 
-<p>
-  <strong>Certificado formacion:</strong>
-  <%= @folder.certificado_formacion %>
-</p>
 
-<p>
-  <strong>Certificado cuenta bancaria:</strong>
-  <%= @folder.certificado_cuenta_bancaria %>
-</p>
-
-<p>
-  <strong>Fondo pension:</strong>
-  <%= @folder.fondo_pension %>
-</p>
-
-<p>
-  <strong>Cesantias:</strong>
-  <%= @folder.cesantias %>
-</p>
-
-<p>
-  <strong>Certificado eps:</strong>
-  <%= @folder.certificado_eps %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @folder.user %>
-</p>
-
-<%= link_to 'Edit', edit_folder_path(@folder) %> |
-<%= link_to 'Back', folders_path %>
