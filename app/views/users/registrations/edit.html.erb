@@ -101,14 +101,19 @@
 
                
                 <div class="col-md-4">
+                  <div class="field">
                   <label>Departamento</label>
-                    <%= f.select :department_id, Department.all.collect{ |u| [ u.name, u.id] }, :selected => @user.department_id %>                 
+                  <%= f.select :department_id,options_for_select(Department.all.collect{ |u| [ u.name, u.id] }), :selected => @user.department_id,:class => "chosen-select", required: true %> </div>          
                 </div>
+              
+               
 
                  <div class="col-md-4">
+                  <div class="field">
                   <label>Ciudad</label>
-                    <%= f.select :city_id, City.all.collect{ |u| [ u.name, u.id] }, :selected => @user.city_id %>                 
-                </div>
+                    <%= f.select :city_id,options_for_select(City.all.collect{ |u| [ u.name, u.id] }), :selected => @user.city_id,:class => "chosen-select", required: true %>      
+                     </div>
+              </div>
 
 
                 <div class="col-md-4">

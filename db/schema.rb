@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181210205900) do
+ActiveRecord::Schema.define(version: 20181211155115) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -119,39 +119,10 @@ ActiveRecord::Schema.define(version: 20181210205900) do
     t.index ["company_id"], name: "index_offers_on_company_id"
   end
 
-  create_table "recognitions", force: :cascade do |t|
-    t.text "image"
-    t.text "analisis"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_recognitions_on_user_id"
-  end
-
-  create_table "recordings", force: :cascade do |t|
-    t.text "texto"
-    t.text "emocion"
-    t.integer "status"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_recordings_on_user_id"
-  end
-
   create_table "resumes", force: :cascade do |t|
     t.string "attachment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "texts", force: :cascade do |t|
-    t.text "texto"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.text "emocion"
-    t.text "status"
-    t.index ["user_id"], name: "index_texts_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -32,19 +32,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="act-link">Notificaciones personalizadas (<%=@notifications.size%>) <i class="fa fa-caret-down"></i></a>
-                        <!--second level -->
-                        <ul>
-                            <% if @notifications.size == 0 %>
-                            <li><a>No hay notificaciones para ti</a></li>
-                            <% end %>
-                            <% @notifications.each do |notification| %>
-                            <li><a><%= notification["text"] %></a></li>
-                            <% end %>
-                        </ul>
-                        <!--second level end-->
-                    </li>
                     <% else %>
                     <li>
                         <%= link_to "Nosotros", "/nosotros" , data: { confirm: 'Are you sure?' }%>

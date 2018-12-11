@@ -1,6 +1,6 @@
 class FoldersController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_folder, only: [:show, :edit, :update, :destroy]
+  before_action :set_folder, only: [:show, :edit, :destroy]
 
   def index
     @folders = Folder.all
@@ -11,7 +11,7 @@ class FoldersController < ApplicationController
   # GET /folders/1.json
   def show
     folder = Folder.find(params[:id])
-   if current_user == folder.user # si mi usuario es el mismo del anuncio valida que no haga una reserva propia
+   if current_user == folder.user 
     else
        flash[:alert] = "No puedes ver la carpeta laboral de otras personas"
        redirect_to  root_path
@@ -50,28 +50,13 @@ class FoldersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /folders/1
-  # PATCH/PUT /folders/1.json
-  def update
-    respond_to do |format|
-      if @folder.update(folder_params)
-        format.html { redirect_to @folder, notice: 'Folder was successfully updated.' }
-        format.json { render :show, status: :ok, location: @folder }
-      else
-        format.html { render :edit }
-        format.json { render json: @folder.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+
 
   # DELETE /folders/1
   # DELETE /folders/1.json
   def destroy
     @folder.destroy
-    respond_to do |format|
-      format.html { redirect_to folders_url, notice: 'Folder was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    flash[:notice] = "Se ha borrado exitosamente."
   end
 
   private

@@ -26,8 +26,6 @@ class OffersController < ApplicationController
   # POST /offers.json
   def create
 
-
-
     @offer = Offer.new(offer_params)
     @offer.company_id = current_company.id
 
