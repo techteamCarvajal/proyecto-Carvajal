@@ -1,10 +1,25 @@
 Rails.application.routes.draw do
 
-    resources :folders, except: [:edit]
+
+
+  namespace :folder do
+    get 'steps_controller/show'
+  end
+
+  namespace :folder do
+    get 'steps_controller/update'
+  end
+
+	resources :folders, only: [:new, :create, :show, :index] do
+	  resources :steps, only: [:show, :update], controller: 'folder/steps'
+	end
+
+    resources :folders, only: [:new, :create, :show, :index]
    	devise_for :companies, controllers: { sessions: 'companies/sessions' , registrations: 'companies/registrations' } 
 	devise_for :administrators 
 	devise_for :users
 	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+	
   	resources :offers
   	resources :blogs
   	resources :contacts, only: [:new, :create]

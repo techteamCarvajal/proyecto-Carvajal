@@ -1,0 +1,2 @@
+module Folder::StepsControllerHelper
+end
