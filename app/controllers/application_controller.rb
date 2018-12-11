@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
 		def configure_permitted_parameters
 			devise_parameter_sanitizer.permit(:sign_up, keys: [:celular, :nombres, :apellidos, :tipo_documento,:numero_documento])
-			devise_parameter_sanitizer.permit(:account_update, keys: [:celular, :nombres, :apellidos, :tipo_documento,:numero_documento,:direccion,:ciudad,:departamento,:fecha_nacimiento,:experiencia_laboral, :referencia_laboral, :cv,:carrera,:celular_referencia,:nivel_educativo])
+			devise_parameter_sanitizer.permit(:account_update, keys: [:celular, :nombres, :apellidos, :tipo_documento,:numero_documento,:direccion,:city_id,:department_id,:fecha_nacimiento,:experiencia_laboral, :referencia_laboral, :cv,:carrera,:celular_referencia,:nivel_educativo])
 		end
 		def get_notifications
 			@notifications = []

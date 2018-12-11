@@ -99,37 +99,27 @@
 
                 <div class="row">
 
-                
                
                 <div class="col-md-4">
                   <label>Departamento</label>
-                    <%= f.select :deparment_id, Department.all.collect{ |u| [ u.name, u.id] }, :selected => params[:department_id] %>                 
+                    <%= f.select :department_id, Department.all.collect{ |u| [ u.name, u.id] }, :selected => @user.department_id %>                 
                 </div>
 
                  <div class="col-md-4">
                   <label>Ciudad</label>
-                  <%= f.select :city_id, City.all.collect{ |u| [ u.name, u.id] }, :selected => params[:city_id] %>
-                  </div>
+                    <%= f.select :city_id, City.all.collect{ |u| [ u.name, u.id] }, :selected => @user.city_id %>                 
+                </div>
 
-                
-                  </div>
-
-               
 
                 <div class="col-md-4">
                   <div class="field">
                    <label>Nivel educativo</label>
-                   <%= f.select :nivel_educativo, options_for_select([["Bachillerato", "Bachillerato"], ["Técnica", "Técnica"],["Tecnología", "Tecnología"],["Pregrado", "Pregrado"],["Posgrado", "Posgrado"],["Doctorado", "Doctorado"],["Posdoctorado", "Posdoctorado"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                   <%= f.select :nivel_educativo, options_for_select([["Bachillerato", "Bachillerato"], ["Técnica", "Técnica"],["Tecnología", "Tecnología"],["Pregrado", "Pregrado"],["Posgrado", "Posgrado"],["Doctorado", "Doctorado"],["Posdoctorado", "Posdoctorado"]],:selected => @user.nivel_educativo), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
                   </div>
                 </div>
+                  </div>
 
-              
-              </div>
-
-
-
-              <div class="row">
-               
+                <div class="row">
                  <div class="col-md-4">
                   <div class="field">
                     <label>Nombre Carrera</label>
@@ -137,24 +127,24 @@
                   </div>
                 </div>
 
-                 <div class="col-md-4">
+                <div class="col-md-4">
                    <div class="field">
                    <label>Experiencia Laboral</label>
-                   <%= f.select :experiencia_laboral, options_for_select([["1 año", "1 año"], ["2 años", "2 años"],["3 años", "3 años"],["5 años", "5 años"],["8 años", "8 años"],["10 años o más", "10 años o m"]]), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                   <%= f.select :experiencia_laboral, options_for_select([["1 año", "1 año"], ["2 años", "2 años"],["3 años", "3 años"],["5 años", "5 años"],["8 años", "8 años"],["10 años o más", "10 años o m"]],:selected => @user.experiencia_laboral), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
                   </div>
                 </div>
 
-                 <div class="col-md-4">
+                   <div class="col-md-4">
                   <div class="field">
                     <label>Referencia laboral</label>
                     <%= f.text_field :referencia_laboral %>
                   </div>
-                </div>
-               
+                </div>   
               </div>
 
-
+             
               <div class="row">
+
                 <div class="col-md-4">
                   <div class="field">
                    <label>Cargar hoja de vida</label>
@@ -177,7 +167,6 @@
                 </div>
 
               </div>
-
 
 
 
