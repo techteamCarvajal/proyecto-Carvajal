@@ -32,10 +32,16 @@ class FoldersController < ApplicationController
   # POST /folders
   # POST /folders.json
   def create 
-        @folder = Folder.new
+    if current_user.folders.count == 0
+         @folder = current_user.folders.build
          @folder.user_id = current_user.id  
          @folder.save(validate: false) 
-        redirect_to folder_step_path(@folder, Folder.form_steps.first)     
+        redirect_to folder_step_path(@folder, Folder.form_steps.first)    
+        else
+      flash[:alert] =  "Sólo puedes crear la etapa 1 una vez."
+      redirect_to root_path
+    end
+
   end
   # DELETE /folders/1
   # DELETE /folders/1.json

@@ -18,7 +18,7 @@ class Folder::StepsController < ApplicationController
   def folder_params(step)
     permitted_attributes = case step
                            when "etapa1"
-                             [:referencia_laboral, :soporte_estudios]
+                             [:referencia_laboral, :soporte_estudios,:fotocopia_cedula, :certificado_formacion]
                            when "etapa2"
                              [:fotocopia_cedula, :certificado_formacion]
                            end
