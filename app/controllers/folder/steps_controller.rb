@@ -4,7 +4,7 @@ class Folder::StepsController < ApplicationController
 
   def show
   	 @folder = Folder.find(params[:folder_id])
-    render_wizard
+     render_wizard
   end
 
   def update

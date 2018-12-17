@@ -1,0 +1,58 @@
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+<section class="sec1">
+  
+
+  <div class="registro container sign-in-container">
+    <h2>Etapa 1</h2>
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form">
+            <%= form_for @folder, method: :put, url: wizard_path do |f| %>
+              <% if f.object.errors.any? %>
+              <div class="error_messages">
+              <% f.object.errors.full_messages.each do |error| %>
+                 <p><%= error %></p>
+                     <% end %>
+                       </div>
+                  <% end %>     
+
+             <div class="row">
+                    <div class="col-md-6">
+                     <div class="field">
+                    <label>Soporte estudios</label>
+                    <%= f.file_field :soporte_estudios  %>
+                  </div>
+                </div>
+
+                    <div class="col-md-6">
+                  <div class="field">
+                    <label>Referencia laboral</label>
+                    <%= f.file_field :referencia_laboral  %>
+                  </div>
+                </div>
+              </div>
+
+
+                 <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                  <button type="submit" class="log-submit-btn">
+                    <span>Continuar</span>
+                  </button>
+                </div>
+              </div>
+              <% end %>
+
+          
+
+
+
+
+
+
+  

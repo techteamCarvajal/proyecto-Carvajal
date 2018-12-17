@@ -29,29 +29,14 @@ class FoldersController < ApplicationController
       redirect_to root_path
     end
   end
-
- 
   # POST /folders
   # POST /folders.json
-  def create
-    if Folder.count > 0
-      @folder.order = Folder.maximum(:order) + 1
-    else 
-      @folder.order = 1
-    end
-    @folder = Folder.new(folder_params)
-    @folder.user_id = current_user.id  
-      if @folder.save
-        flash[:notice] = "Etapa 1 creada exitosamente."
-        redirect_to root_path
-      else
-       flash[:notice] = "La etapa 1 no pudo ser creada"
-       redirect_to root_path    
-    end
+  def create 
+        @folder = Folder.new
+         @folder.user_id = current_user.id  
+         @folder.save(validate: false) 
+        redirect_to folder_step_path(@folder, Folder.form_steps.first)     
   end
-
-
-
   # DELETE /folders/1
   # DELETE /folders/1.json
   def destroy

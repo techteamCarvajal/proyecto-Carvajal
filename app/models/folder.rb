@@ -6,9 +6,12 @@ class Folder < ApplicationRecord
 
   attr_accessor :form_step
 
-  	validates :referencia_laboral, :soporte_estudios, presence: true, if: -> { required_for_step?(:etapa1) }
+  	validates :referencia_laboral, :soporte_estudios,:referencia_laboral, presence: true, if: -> { required_for_step?(:etapa1) }
     validates :fotocopia_cedula, :certificado_formacion, presence: true, if: -> { required_for_step?(:etapa2) }
- 	
+    mount_uploader :referencia_laboral, AttachmentUploader 
+    mount_uploader :soporte_estudios, AttachmentUploader 
+    mount_uploader :certificado_formacion, AttachmentUploader
+	mount_uploader :fotocopia_cedula, AttachmentUploader 	
 		def required_for_step?(step)
 	  # All fields are required if no form step is present
 	  return true if form_step.nil?
