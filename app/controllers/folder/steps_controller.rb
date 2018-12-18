@@ -20,7 +20,9 @@ class Folder::StepsController < ApplicationController
                            when "etapa1"
                              [:referencia_laboral, :soporte_estudios,:fotocopia_cedula, :certificado_formacion]
                            when "etapa2"
-                             [:fotocopia_cedula, :certificado_formacion]
+                            [:formato_domiciliaria, :formato_complemento,:conflicto_intereses]
+                           when "etapa3"
+                            [:certificado_cuenta_bancaria, :fondo_pension, :cesantias, :certificado_eps]
                            end
 
     params.require(:folder).permit(permitted_attributes).merge(form_step: step)

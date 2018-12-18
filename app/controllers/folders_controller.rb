@@ -58,6 +58,6 @@ class FoldersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def folder_params
-      params.require(:folder).permit(:soporte_estudios, :referencia_laboral, :fotocopia_cedula, :certificado_formacion, :certificado_cuenta_bancaria, :fondo_pension, :cesantias, :certificado_eps, :user_id)
+      params.require(:folder).permit(:soporte_estudios, :referencia_laboral, :fotocopia_cedula, :certificado_formacion, :certificado_cuenta_bancaria, :fondo_pension, :cesantias, :certificado_eps,:formato_domiciliaria, :formato_complemento,:conflicto_intereses, :user_id)
     end
 end

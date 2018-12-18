@@ -1,0 +1,29 @@
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+ 
+                     <div class="dashboard-list-box fl-wrap">
+                    <div class="reviews-comments-wrap">
+                        <% if @documents.size == 0 %>
+                            <p>No existen actualmente contenidos en el document, crea una</p>
+                        <% end %>
+                         <% @documents.each do |document| %>
+                            <!-- reviews-comments-item -->  
+                            <div class="reviews-comments-item">
+                                <div class="reviews-comments-item-text">
+                        
+                                    <div class="clearfix"></div>
+                                    <p>Titulo del documento: <%= document.name %></p>
+                                    <p><%= link_to "Descargar", document.document_url %></p>          
+                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= document.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                </div>
+                            </div>
+                            <!--reviews-comments-item end-->
+                        <% end %>
+                    </div>
+                </div>
+
+  

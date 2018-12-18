@@ -8,32 +8,50 @@
   
 
   <div class="registro container sign-in-container">
-    <h2>Etapa 2</h2>
+    <h2>Etapa 3</h2>
     <div class="tabs-container">
       <div class="tab">
         <div id="tab-1" class="tab-content">
           <div class="custom-form">
             <%= form_for @folder, method: :put, url: wizard_path do |f| %>
-            <% if f.object.errors.any? %>
+              <% if f.object.errors.any? %>
               <div class="error_messages">
               <% f.object.errors.full_messages.each do |error| %>
                  <p><%= error %></p>
                      <% end %>
                        </div>
-                  <% end %>   
-              
+                  <% end %>     
+ 
+
              <div class="row">
                     <div class="col-md-6">
                      <div class="field">
-                    <label>Fotocopia de cédula</label>
-                    <%= f.file_field :fotocopia_cedula  %>
+                    <label>Certificado cuenta bancaria</label>
+                    <%= f.file_field :certificado_cuenta_bancaria %>
                   </div>
                 </div>
 
                     <div class="col-md-6">
                   <div class="field">
-                    <label>Cerificado de formación</label>
-                    <%= f.file_field :certificado_formacion  %>
+                    <label>Fondo de pensión</label>
+                    <%= f.file_field :fondo_pension %>
+                  </div>
+                </div>
+              </div>
+            
+
+              <div class="row">
+                    <div class="col-md-6">
+                     <div class="field">
+                    <label>Afiliación de cesantias</label>
+                    <%= f.file_field :cesantias %>
+                  </div>
+                </div>
+
+                    <div class="col-md-6">
+                  <div class="field">
+                    <label>Cerificado de EPS</label>
+                    <%= f.file_field :certificado_eps  %>
                   </div>
                 </div>
               </div>
@@ -46,3 +64,5 @@
                 </div>
               </div>
               <% end %>
+
+          
