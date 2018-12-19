@@ -8,7 +8,7 @@
   
 
   <div class="registro container sign-in-container">
-    <h2>Etapa 1</h2>
+    <h2>Etapa 2</h2>
     <div class="tabs-container">
       <div class="tab">
         <div id="tab-1" class="tab-content">
@@ -26,14 +26,14 @@
                     <div class="col-md-6">
                      <div class="field">
                     <label>Formato pre-visita domiciliaria</label>
-                    <%= f.file_field :formato_domiciliaria  %>
+                    <%= f.file_field :formato_domiciliaria , required: true %>
                   </div>
                 </div>
 
                     <div class="col-md-6">
                   <div class="field">
                     <label>Formato complementario visita domiciliaria</label>
-                    <%= f.file_field :formato_complemento  %>
+                    <%= f.file_field :formato_complemento , required: true  %>
                   </div>
                 </div>
               </div>
@@ -43,7 +43,7 @@
                     <div class="col-md-6">
                      <div class="field">
                     <label>Conflicto de intereses</label>
-                    <%= f.file_field :conflicto_intereses  %>
+                    <%= f.file_field :conflicto_intereses , required: true  %>
                   </div>
                 </div>
 

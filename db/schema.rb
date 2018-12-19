@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181218201104) do
+ActiveRecord::Schema.define(version: 20181219153137) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -90,6 +90,9 @@ ActiveRecord::Schema.define(version: 20181218201104) do
     t.string "formato_complemento"
     t.string "conflicto_intereses"
     t.string "oferta"
+    t.boolean "acepta_contrato"
+    t.string "arl"
+    t.string "radicacion_eps"
     t.index ["user_id"], name: "index_folders_on_user_id"
   end
 

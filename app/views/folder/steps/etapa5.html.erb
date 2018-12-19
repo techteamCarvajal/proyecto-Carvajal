@@ -1,0 +1,51 @@
+<style type="text/css">
+.sign-in-container {
+    max-width: 500px;
+}
+</style>
+
+<section class="sec1">
+  
+
+  <div class="registro container sign-in-container">
+    <h2>Firma del contrato</h2>
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form">
+            <%= form_for @folder, method: :put, url: wizard_path do |f| %>
+              <% if f.object.errors.any? %>
+              <div class="error_messages">
+              <% f.object.errors.full_messages.each do |error| %>
+                 <p><%= error %></p>
+                     <% end %>
+                       </div>
+                  <% end %>     
+ 
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci- pit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dig- nissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci- pit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci- pit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto</p>
+
+             <div class="row">
+                    <div class="col-md-6">
+                     <div class="field">
+                    <label>Firma Luis Enrique LLamas</label>
+                    
+                  </div>
+                </div>
+
+                    <div class="col-md-4">
+                  <div class="field">
+                     <%= f.check_box :acepta_contrato , required: true%>
+                   <label>Está de acuerdo con los terminos del contrato</label>   
+                  </div>
+                </div>
+              </div>
+            
+
+                 <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                  <button type="submit" class="log-submit-btn">
+                    <span>Aceptar el proceso</span>
+                  </button>
+                </div>
+              </div>
+              <% end %>

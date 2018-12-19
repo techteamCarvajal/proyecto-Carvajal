@@ -23,39 +23,25 @@
                   <% end %>     
  
 
-             <div class="row">
+            <div class="row">
                     <div class="col-md-6">
                      <div class="field">
-                    <label>Certificado cuenta bancaria</label>
-                    <%= f.file_field :certificado_cuenta_bancaria %>
+                    <label>Boton popup Contrato</label>
+                 
                   </div>
                 </div>
 
                     <div class="col-md-6">
                   <div class="field">
-                    <label>Fondo de pensión</label>
-                    <%= f.file_field :fondo_pension %>
+                    <label>Contrato </label>
+                    <%= f.file_field :oferta , required: true %>
                   </div>
                 </div>
               </div>
             
+            
 
-              <div class="row">
-                    <div class="col-md-6">
-                     <div class="field">
-                    <label>Afiliación de cesantias</label>
-                    <%= f.file_field :cesantias %>
-                  </div>
-                </div>
-
-                    <div class="col-md-6">
-                  <div class="field">
-                    <label>Cerificado de EPS</label>
-                    <%= f.file_field :certificado_eps  %>
-                  </div>
-                </div>
-              </div>
-
+    
                  <div class="row">
                 <div class="col-md-8 col-md-offset-4">
                   <button type="submit" class="log-submit-btn">

@@ -15,7 +15,7 @@ class User < ApplicationRecord
       has_many :blogs, dependent: :destroy
       has_many :folders, dependent: :destroy
       
-      mount_uploader :cv, AttachmentUploader # Tells rails to use this uploader for this model.
+     # Tells rails to use this uploader for this model.
       belongs_to :city
       belongs_to :department
     

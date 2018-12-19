@@ -11,6 +11,7 @@ class Folder::StepsController < ApplicationController
     @folder = Folder.find(params[:folder_id])
     @folder.update(folder_params(step))
     render_wizard @folder
+
   end
 
  private
@@ -23,6 +24,12 @@ class Folder::StepsController < ApplicationController
                             [:formato_domiciliaria, :formato_complemento,:conflicto_intereses]
                            when "etapa3"
                             [:certificado_cuenta_bancaria, :fondo_pension, :cesantias, :certificado_eps]
+                          when "etapa4"
+                            [:oferta]
+                          when "etapa5"
+                            [:acepta_contrato]
+                          when "etapa6"
+                            [:arl, :radicacion_eps]
                            end
 
     params.require(:folder).permit(permitted_attributes).merge(form_step: step)

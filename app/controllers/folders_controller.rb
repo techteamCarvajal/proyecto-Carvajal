@@ -1,6 +1,7 @@
 class FoldersController < ApplicationController
-  before_action :authenticate_user!
+  
   before_action :set_folder, only: [:show, :edit, :destroy]
+  before_action :authenticate_user!
 
   def index
     @folders = Folder.all
@@ -22,12 +23,7 @@ class FoldersController < ApplicationController
   # genera la etapa 1 de la carpeta laboral
   # GET /folders/new
   def new
-    if current_user.folders.count == 0
-      @folder = current_user.folders.build
-    else
-      flash[:alert] =  "Sólo puedes crear la etapa 1 una vez."
-      redirect_to root_path
-    end
+   @folder = Folder.new
   end
   # POST /folders
   # POST /folders.json
@@ -58,6 +54,7 @@ class FoldersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def folder_params
-      params.require(:folder).permit(:soporte_estudios, :referencia_laboral, :fotocopia_cedula, :certificado_formacion, :certificado_cuenta_bancaria, :fondo_pension, :cesantias, :certificado_eps,:formato_domiciliaria, :formato_complemento,:conflicto_intereses, :user_id)
+      params.require(:folder).permit(:soporte_estudios, :referencia_laboral, :fotocopia_cedula, :certificado_formacion, :certificado_cuenta_bancaria, 
+        :fondo_pension, :cesantias, :certificado_eps,:formato_domiciliaria, :formato_complemento,:conflicto_intereses,:oferta,:acepta_contrato,:arl, :radicacion_eps, :user_id)
     end
 end

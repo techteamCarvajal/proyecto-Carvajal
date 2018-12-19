@@ -12,14 +12,22 @@ class Folder < ApplicationRecord
     mount_uploader :fondo_pension,AttachmentUploader
     mount_uploader :cesantias,AttachmentUploader
 	mount_uploader :certificado_eps,AttachmentUploader
+	mount_uploader :oferta,AttachmentUploader
+	mount_uploader :certificado_eps,AttachmentUploader
+	mount_uploader :oferta,AttachmentUploader
+	mount_uploader :arl,AttachmentUploader
+	mount_uploader :radicacion_eps,AttachmentUploader
+
 	cattr_accessor :form_steps do
-  	%w(etapa1 etapa2 etapa3 etapa4)
+  	%w(etapa1 etapa2 etapa3 etapa4 etapa5 etapa6)
   end
 
   attr_accessor :form_step
   	validates :referencia_laboral,:soporte_estudios,:referencia_laboral,:certificado_formacion, presence: true, if: -> { required_for_step?(:etapa1) }
   	validates :formato_domiciliaria, :formato_complemento,:conflicto_intereses, presence: true, if: -> { required_for_step?(:etapa2) }
   	validates :certificado_cuenta_bancaria,:fondo_pension, :cesantias,:certificado_eps, presence: true, if: -> { required_for_step?(:etapa3) }
+  	validates :acepta_contrato, presence: true, if: -> {required_for_step?(:etapa5)}
+  	validates :arl,:radicacion_eps, presence: true, if: -> {required_for_step?(:etapa6)}
   
 		def required_for_step?(step)
 	  # All fields are required if no form step is present
