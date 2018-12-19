@@ -10,7 +10,11 @@ class Companies::SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
    def create
-    super
+    self.resource = warden.authenticate!(auth_options)
+    flash[:notice] = "Ha iniciado exitosamente."
+    sign_in(resource_name, resource)
+    yield resource if block_given?
+    redirect_to  new_offer_path
    end
 
   # DELETE /resource/sign_out
