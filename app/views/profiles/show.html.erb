@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nivel educativo:</strong>
+  <%= @profile.nivel_educativo %>
+</p>
+
+<p>
+  <strong>Experiencia laboral:</strong>
+  <%= @profile.experiencia_laboral %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @profile.sector %>
+</p>
+
+<p>
+  <strong>Tarjeta profesional:</strong>
+  <%= @profile.tarjeta_profesional %>
+</p>
+
+<p>
+  <strong>Num tarjeta profesional:</strong>
+  <%= @profile.num_tarjeta_profesional %>
+</p>
+
+<p>
+  <strong>Fecha expedicion:</strong>
+  <%= @profile.fecha_expedicion %>
+</p>
+
+<p>
+  <strong>Parentesco carvajal:</strong>
+  <%= @profile.parentesco_carvajal %>
+</p>
+
+<p>
+  <strong>Hoja vida:</strong>
+  <%= @profile.hoja_vida %>
+</p>
+
+<p>
+  <strong>Ingles:</strong>
+  <%= @profile.ingles %>
+</p>
+
+<p>
+  <strong>Programas:</strong>
+  <%= @profile.programas %>
+</p>
+
+<p>
+  <strong>Cursos:</strong>
+  <%= @profile.cursos %>
+</p>
+
+<p>
+  <strong>Certificado curso:</strong>
+  <%= @profile.certificado_curso %>
+</p>
+
+<p>
+  <strong>Habilidades:</strong>
+  <%= @profile.habilidades %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

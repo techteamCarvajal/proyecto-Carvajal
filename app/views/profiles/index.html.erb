@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nivel educativo</th>
+      <th>Experiencia laboral</th>
+      <th>Sector</th>
+      <th>Tarjeta profesional</th>
+      <th>Num tarjeta profesional</th>
+      <th>Fecha expedicion</th>
+      <th>Parentesco carvajal</th>
+      <th>Hoja vida</th>
+      <th>Ingles</th>
+      <th>Programas</th>
+      <th>Cursos</th>
+      <th>Certificado curso</th>
+      <th>Habilidades</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <td><%= profile.nivel_educativo %></td>
+        <td><%= profile.experiencia_laboral %></td>
+        <td><%= profile.sector %></td>
+        <td><%= profile.tarjeta_profesional %></td>
+        <td><%= profile.num_tarjeta_profesional %></td>
+        <td><%= profile.fecha_expedicion %></td>
+        <td><%= profile.parentesco_carvajal %></td>
+        <td><%= profile.hoja_vida %></td>
+        <td><%= profile.ingles %></td>
+        <td><%= profile.programas %></td>
+        <td><%= profile.cursos %></td>
+        <td><%= profile.certificado_curso %></td>
+        <td><%= profile.habilidades %></td>
+        <td><%= link_to 'Show', profile %></td>
+        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile', new_profile_path %>

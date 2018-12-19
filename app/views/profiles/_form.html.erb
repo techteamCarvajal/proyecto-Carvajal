@@ -1,0 +1,82 @@
+<%= form_with(model: profile, local: true) do |form| %>
+  <% if profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nivel_educativo %>
+    <%= form.text_field :nivel_educativo, id: :profile_nivel_educativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experiencia_laboral %>
+    <%= form.text_field :experiencia_laboral, id: :profile_experiencia_laboral %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.text_field :sector, id: :profile_sector %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tarjeta_profesional %>
+    <%= form.text_field :tarjeta_profesional, id: :profile_tarjeta_profesional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_tarjeta_profesional %>
+    <%= form.text_field :num_tarjeta_profesional, id: :profile_num_tarjeta_profesional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_expedicion %>
+    <%= form.text_field :fecha_expedicion, id: :profile_fecha_expedicion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parentesco_carvajal %>
+    <%= form.text_field :parentesco_carvajal, id: :profile_parentesco_carvajal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hoja_vida %>
+    <%= form.text_field :hoja_vida, id: :profile_hoja_vida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingles %>
+    <%= form.text_field :ingles, id: :profile_ingles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :programas %>
+    <%= form.text_field :programas, id: :profile_programas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cursos %>
+    <%= form.text_field :cursos, id: :profile_cursos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :certificado_curso %>
+    <%= form.text_field :certificado_curso, id: :profile_certificado_curso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :habilidades %>
+    <%= form.text_field :habilidades, id: :profile_habilidades %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

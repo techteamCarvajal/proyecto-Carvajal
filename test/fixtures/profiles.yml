@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nivel_educativo: MyString
+  experiencia_laboral: MyString
+  sector: MyString
+  tarjeta_profesional: MyString
+  num_tarjeta_profesional: MyString
+  fecha_expedicion: MyString
+  parentesco_carvajal: MyString
+  hoja_vida: MyString
+  ingles: MyString
+  programas: MyString
+  cursos: MyString
+  certificado_curso: MyString
+  habilidades: MyString
+
+two:
+  nivel_educativo: MyString
+  experiencia_laboral: MyString
+  sector: MyString
+  tarjeta_profesional: MyString
+  num_tarjeta_profesional: MyString
+  fecha_expedicion: MyString
+  parentesco_carvajal: MyString
+  hoja_vida: MyString
+  ingles: MyString
+  programas: MyString
+  cursos: MyString
+  certificado_curso: MyString
+  habilidades: MyString
