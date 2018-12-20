@@ -31,7 +31,7 @@
 
 function mostrar() {
     swal({
-        title: 'estas seguro?',
+        title: 'Terminaste el proceso',
         text: "¿deseas continuar?",
         type: 'warning',
         showCancelButton: true,
@@ -40,6 +40,20 @@ function mostrar() {
         cancelButtonColor: '#7D8',
         confirmButtonText: 'Yes, delete it!',
         cancelButtonText: 'ok'
+    })
+}
+
+function finalizado() {
+    swal({
+        title: 'Terminaste el proceso',
+        text: "Bienvenido a Carvajal",
+        type: 'info',
+        showCancelButton: true,
+        showConfirmButton: false,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#7D8',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'cerrar'
     })
 }
 

@@ -1483,7 +1483,7 @@ section.gray-section .section-separator {
 	background:#eee;
 	z-index:1;
 }
-.custom-form .log-submit-btn {
+.custom-form .log-submit-btn  {
 	float:left;
 	padding:13px 35px;
 	border:none;
@@ -1493,6 +1493,7 @@ section.gray-section .section-separator {
 	-webkit-appearance: none;
 	margin-top:12px;
 }
+
 .main-register .filter-tags{
 	float:left;
 }
@@ -5291,6 +5292,7 @@ footer.main-footer.fixed-footer {
 	text-align:center;
 	color:#fff;
 	font-size:13px;
+	margin-bottom:10px;
 }
 .process-count {
 	position:absolute;
@@ -6766,8 +6768,24 @@ header.main-header {
     text-transform: uppercase;
     background: #8A9847;
 }
-.registro .custom-form .log-submit-btn:hover{
+.registro .custom-form .log-submit-btn:hover, .boton-doc:hover{
 	background: #e5e25a;
+}
+
+
+.boton-doc{
+	margin-top: 10px;
+	padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-appearance: none;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    background: #8A9847;
 }
 
 .registro{
@@ -6778,6 +6796,7 @@ header.main-header {
   cursor: pointer;
   width: 100%;
   overflow: hidden;
+	padding-left: 0;
 }
 
 .registro input[type=file]:before {
@@ -6787,7 +6806,6 @@ header.main-header {
     padding-left: 10px;
     font-size: 16px;
     line-height: 0px;
-    content: 'Cargar hoja de vida';
     display: inline-block;
     background: transparent;
     color: white;

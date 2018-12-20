@@ -4,7 +4,7 @@
 }
 </style>
 
-<section class="sec1">
+
   
 
   <div class="registro container sign-in-container">
@@ -98,17 +98,19 @@
    
 
                 <div class="row">               
-                <div class="col-md-4">
-                  <div class="field">
+              
+
+ <div class="col-md-4">
                   <label>Departamento</label>
-                  <%= f.select :department_id,Department.all.collect{ |u| [ u.name, u.id] }, :selected => @user.department_id,:class => "chosen-select", required: true %> </div>          
+                  <%= f.select :department_id, options_for_select(Department.all.collect{ |u| [ u.name, u.id] },:selected => @user.department_id), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
                 </div>
+
                  <div class="col-md-4">
-                  <div class="field">
                   <label>Ciudad</label>
-                    <%= f.select :city_id,City.all.collect{ |u| [ u.name, u.id] }, :selected => @user.city_id,:class => "chosen-select", required: true %>      
-                     </div>
-              </div>
+                  <%= f.select :city_id, options_for_select(City.all.collect{ |u| [ u.name, u.id] },:selected => @user.city_id), {:prompt => "Seleccionar"}, {:class => "chosen-select", required: true} %> 
+                </div>
+
+               
 
 
               
@@ -125,14 +127,14 @@
 
               <div class="row">
 
-                <div class="col-md-4 center">
-                  <button type="submit" class="log-submit-btn">
+                <div class="col-md-6">
+                  <button  style="width:100%;"type="submit" class="log-submit-btn">
                     <span>Completa tú perfil</span>
                   </button>
                 </div>
 
-                <div class="col-md-4 center">
-                  <button type="submit" class="log-submit-btn">
+                <div class="col-md-6">
+                  <button style="width:100%;" type="submit" class="log-submit-btn">
                     <span>Actualizar</span>
                   </button>
                 </div>

@@ -1,3 +1,6 @@
+<section class="sec1">
+  <div class="registro container sign-in-container">
+
 <% if !@document.errors.empty? %>
    <div class = "alert alert-error">
       
@@ -10,12 +13,22 @@
    </div>
 <% end %>
 
-<div class = "well">
+<div class = "well custom-form">
    <%= form_for @document, html: { multipart: true } do |f| %>
+   <div class="col-md-4">
      <label>nombre</label>
       <%= f.text_field :name %>
+   </div>
+   <div class="col-md-4">
       <label>Documento</label>
-      <%= f.file_field :document %>
-      <%= f.submit "Guardar", class: "btn btn-primary" %>
+      <%= f.file_field :document, style:"padding:0;" %>
+   </div>
+   <div class="col-md-4">
+      <%= f.submit "Guardar", class: "btn btn-primary log-submit-btn" %>
+
    <% end %>
 </div>
+</div>
+
+</div>
+</section>

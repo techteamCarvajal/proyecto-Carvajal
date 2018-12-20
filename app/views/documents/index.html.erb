@@ -3,6 +3,7 @@
     max-width: 500px;
 }
 </style>
+   <div class="process-wrap fl-wrap">
 
  
                      <div class="dashboard-list-box fl-wrap">
@@ -13,12 +14,12 @@
                          <% @documents.each do |document| %>
                             <!-- reviews-comments-item -->  
                             <div class="reviews-comments-item">
-                                <div class="reviews-comments-item-text">
+                                <div class=" reviews-comments-item-text">
                         
                                     <div class="clearfix"></div>
                                     <p>Titulo del documento: <%= document.name %></p>
-                                    <p><%= link_to "Descargar", document.document_url %></p>          
-                                    <span class="reviews-comments-item-date" style="color: black;"><i class="fa fa-calendar-check-o"></i><%= document.created_at.strftime("%B, %d. Hora: %T") %></span>
+                                    <p ><%= link_to "Descargar", document.document_url, class:"boton-doc" %></p>          
+                                    <span class="reviews-comments-item-date" style="color: white;"><i class="fa fa-calendar-check-o"></i><%= document.created_at.strftime("%B, %d. Hora: %T") %></span>
                                 </div>
                             </div>
                             <!--reviews-comments-item end-->
@@ -26,4 +27,4 @@
                     </div>
                 </div>
 
-  
+  </div>
